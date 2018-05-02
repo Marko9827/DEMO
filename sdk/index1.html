@@ -1,0 +1,126 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="http://eronelit.com/logo.ico">
+
+    <title>4354354354935493543</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="js/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="js/signin.css" rel="stylesheet">
+</head>
+
+<body class="text-center"    onkeydown="return false;" onkeypress="return false;" onkeyup="return false;">
+    <form class="form-signin">
+        <img class="mb-4" src="http://eronelit.com/logo.ico" alt="" width="72" height="72">
+        <h1 class="h3 mb-3 font-weight-normal">
+            This page requires access parameters!
+        </h1>
+        <label for="inputEmail" class="sr-only">Email address</label>
+        <input onkeypress="return runScript(event)" type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input data-name="Name" type="text" id="password" onkeydown="checkEnter(e)" onkeypress="return runScript(event)" onkeyup="return false" class="form-control" placeholder="Password" required>
+        <!--        <div class="checkbox mb-3">
+            <label>
+                <input type="checkbox" value="remember-me" style="background:#bf9b30;"> Remember me
+            </label>
+        </div>
+        <div class="checkbox checkbox-inline">
+            <input class="checkbox-input" type="checkbox" id="checkbox-7" checked>
+            <label class="checkbox-label" for="checkbox-7">'Checked inline checkbox'</label>
+        </div>-->
+
+        <button id="button" onclick="idemo()" class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+        <p class="mt-5 mb-3 text-muted">&copy; 2017-2018</p>
+        <script>
+            function idemo() {
+
+                if ((document.getElementById("password").value == 'marko9827') || (document.getElementById("inputEmail").value == 'marko.supergun@gmail.com'))
+                {
+                    window.location.href = 'js/app3/index.html';
+              
+                } else {
+                    //   alert('wrong password!!');
+                    alert("Wrong Password!");
+                    return false;
+                }
+
+
+            }
+
+          
+            function disableCtrlKeyCombination(e) {
+                //list all CTRL + key combinations you want to disable
+                var forbiddenKeys = new Array('a', 'n', 'c', 'x', 'v', 'j', 'w');
+                var key;
+                var isCtrl;
+                if (window.event) {
+                    key = window.event.keyCode;     //IE
+                    if (window.event.ctrlKey)
+                        isCtrl = true;
+                    else
+                        isCtrl = false;
+                }
+                else {
+                    key = e.which;     //firefox
+                    if (e.ctrlKey)
+                        isCtrl = true;
+                    else
+                        isCtrl = false;
+                }
+                //if ctrl is pressed check if other key is in forbidenKeys array
+                if (isCtrl) {
+                    for (i = 0; i < forbiddenKeys.length; i++) {
+                        //case-insensitive comparation
+                        if (forbiddenKeys[i].toLowerCase() == String.fromCharCode(key).toLowerCase()) {
+                            alert('Key combination CTRL + ' + String.fromCharCode(key) + ' has been disabled.');
+                            return false;
+                        }
+                    }
+                }
+            
+            }
+
+
+
+            function myFunction() {
+
+                return false;
+            }
+
+            function runScript(e) {
+                if (e.keyCode == 13) {
+                    //var tb = document.getElementById("password");
+                    //tb.value;
+                    //return false;
+                    document.getElementById("FAE_F").style.display = "block";
+
+                    if (document.getElementById("password").value == 'marko9827') {
+
+                        window.location.href = '/js/app32/index.html';
+                    } else {
+                        document.getElementById("FAE_F").style = "border: red;";
+                        //   alert('wrong password!!');
+                        alert("Wrong Password!");
+                        return false;
+                    }
+                    return false;
+
+                }
+            }
+        </script>
+    </form>
+
+
+
+
+
+ <script src="js/main.js"></script>
+</body>
+</html>
