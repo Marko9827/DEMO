@@ -18,7 +18,7 @@ function Bsve() {
 }
 function B1() {
     document.getElementById("galerija").src = "pr_TP2.html";
-    alert("b1");
+   
     document.getElementById("B1").style = "border-bottom: 2px #1cb9ed solid;";
     document.getElementById("B2").style = "border-bottom: 0px #1cb9ed solid;";
     document.getElementById("B3").style = "border-bottom: 0px #1cb9ed solid;";
