@@ -5,19 +5,21 @@ document.getElementById("IF3").style = "display:none;";
 document.getElementById("ne").style = "display:block;"
 }
 
-
+/*
 document.addEventListener("contextmenu", function (e) { e.preventDefault(); }, false);
 document.addEventListener("dragstart", function (e) { e.preventDefault() }, false);
 document.addEventListener("selectstart", function (e) { e.preventDefault() }, false);
 
-
+*/
 
 function topF(){
     document.body.scrollTop -= 1;
     document.documentElement.scrollTop = 0;
 }
 
-
+function homeF(){
+    window.location.href = 'index.html';
+}
 
 /*
 

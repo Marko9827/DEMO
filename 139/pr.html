@@ -80,7 +80,7 @@
                         <h3>
                             <i class="fa fa-phone" aria-hidden="true"></i>
                         </h3>
-                        <p>+381 64320 1464</p>
+                        <p>+381 649697099</p>
                     </div>
                     <div id="adresa">
 
@@ -120,9 +120,9 @@
                                    >PROIZVODI</a>
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                     <a class="dropdown-item" href="pr.html#TP">Toalet Papir</a>
-                                    <a class="dropdown-item" href="pr.html#KU">Kuhinjski ubrusi</a>
-                                    <a class="dropdown-item" href="pr.html#TS">Tečni sapun</a>
-                                    <a class="dropdown-item" href="pr.html#S">Salvete</a>
+                                    <a class="dropdown-item" href="pr2.html#KU">Industrijski proizvodi</a>
+                                    <a class="dropdown-item" href="pr4.html#TS">Tečni sapun</a>
+                                    <a class="dropdown-item" href="pr3.html#S">Salvete</a>
                                 </div>
                             </div>
                         </li>
@@ -159,24 +159,36 @@
                         <!--<button id="Bsve" onclick="Bsve()">
                             <a>SVI PROIZVODI</a>
                         </button>--> 
-                        <button id="B1" onclick="B1()">
+                        <a id="B1" onclick="B1()">
                            TOALET ROLNA
-                        </button>
-                        <button id="B2" onclick="B2()">
+                        </a>
+                       <!-- <a id="B2" onclick="B2()">
                         KUHINJSKI UBRUS
-                        </button>
-                        <button id="B3" onclick="B3()">
-                            INDUSTRIJSKA ROLNA
-                        </button>
+                        </a>
+                    -->    <a id="B3" onclick="B3()">
+INDUSTRIJSKI PROIZVODI                        <!--
                         <button id="B4" onclick="B4()">
                         INDUSTRIJSKI UBRUS
-                        </button>
-                        <button id="B5" onclick="B5()">
+                        </button> -->
+                        <a id="B5" onclick="B5()">
                          SALVETE
-                        </button>
-                        <button id="B6" onclick="B6()">
+                        </a>
+                        <a id="B6" onclick="B6()">
                          TEČNI SAPUN
-                        </button>
+                        </a>
+
+
+                        <script>
+                        
+                        
+                        document.getElementById("galerija").src = "pr_TP2.html";
+    document.getElementById("B1").style = "border-bottom: 2px #1cb9ed solid;";
+    document.getElementById("B2").style = "border-bottom: 0px #1cb9ed solid;";
+    document.getElementById("B3").style = "border-bottom: 0px #1cb9ed solid;";
+    document.getElementById("B4").style = "border-bottom: 0px #1cb9ed solid;";
+    document.getElementById("B5").style = "border-bottom: 0px #1cb9ed solid;";
+    document.getElementById("B6").style = "border-bottom: 0px #1cb9ed solid;";
+                        </script>
                         <!--<script>
                             function B1() {
                                 document.getElementById("galerija").src = "pr_TP2.html";
@@ -207,7 +219,7 @@
                     <script>
 
                     </script>
-                    <iframe id="galerija"></iframe>
+                    <iframe id="galerija" src="pr_TP2.html"></iframe>
 
                 </div>
                 <hr class="featurette-divider">
