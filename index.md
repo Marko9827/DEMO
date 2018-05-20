@@ -1,1 +1,1 @@
-<script>window.location.href = 'https://login.eronelit.com/';</script>
+<script>window.location.href = 'http://login.eronelit.com/';</script>
