@@ -119,13 +119,13 @@
 
             <nav class="navbar navbar-expand-md navbar-dark fixed-top " style="text-align:center;" id="MENU1">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
-                    aria-expanded="false" aria-label="Toggle navigation">
+                        aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="index.html">
+                            <a class="nav-link active1 zmouse" onclick="F_home()">
                                 NASLOVNA
                                 <span class="sr-only">(current)</span>
                             </a>
@@ -133,30 +133,27 @@
                         <li class="nav-item">
                             <div class="dropdown">
 
-                                <a class="nav-link dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                                href="pr.html">PROIZVODI</a>
-
+                                <a class="nav-link dropdown-toggle zmouse" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PROIZVODI</a>
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item" href="pr.html#TP">Toalet Papir</a>
-                                    <a class="dropdown-item" href="pr2.html#KU">Industrijski proizvodi</a>
-                                    <a class="dropdown-item" href="pr4.html#TS">Tečni sapun</a>
-                                    <a class="dropdown-item" href="pr3.html#S">Salvete</a>
-                          
+                                    <a class="dropdown-item zmouse" onclick="F_PR()">Toalet Papir</a>
+                                    <a class="dropdown-item zmouse" onclick="FPR2()">Industrijski proizvodi</a>
+                                    <a class="dropdown-item zmouse" onclick="FPR4()">Tečni sapun</a>
+                                    <a class="dropdown-item zmouse" onclick="FPR3()">Salvete</a>
+
                                 </div>
                             </div>
                         </li>
                         <li class="nav-item float-right">
-                            <a class="nav-link active1">O NAMA</a>
+                            <a class="nav-link zmouse" onclick="aboutF()">O NAMA</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="contact.html">KONTAKT</a>
+                            <a class="nav-link  zmouse" onclick="contactF()">KONTAKT</a>
                         </li>
                     </ul>
 
                 </div>
             </nav>
         </header>
-
         <main role="main">
             <div id="aboutT" class="abbt13">
                 <h3 class="h3onamas">O Nama</h3>

@@ -14,10 +14,14 @@ color: #007bff;
 
 
 }
-.daf3 img{
-  width: 125px;
-   margin: 0 auto;
-  }
+
+.zmouse{
+    cursor:pointer;
+}
+.daf3 img {
+    width: 125px;
+    margin: 0 auto;
+}
 .abbt13{
   margin-left: 20px;
 }
