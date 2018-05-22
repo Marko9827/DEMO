@@ -50,47 +50,47 @@
     <div id="ne" style="display:none;">
 
         <div id="NAVG">
-            <img onclick="homeF()"  src="img/8.png">
+            <img onclick="homeF()" src="img/8.png">
             <script>
-                function homeF(){
+                function homeF() {
                     window.location.href = 'index.html';
                 }
-                
-                      
-                   </script>
+
+
+            </script>
             <div class="IF">
                 <!-- FA> -->
                 <!-- <FA -->
-                    <div id="dugmici">
-                        <button onclick="RS()" id="BTNRS">RS</button>
-                        <button onclick="EN()" id="BTNEN">EN</button>
-                        <script>
-                          //en
-                          document.getElementById("BTNRS").style = "color:#1cb9ed;"
-                          document.getElementById("BTNEN").style = "color:gray;"
-                          function RS() {
+                <div id="dugmici">
+                    <button onclick="RS()" id="BTNRS">RS</button>
+                    <button onclick="EN()" id="BTNEN">EN</button>
+                    <script>
+                        //en
+                        document.getElementById("BTNRS").style = "color:#1cb9ed;"
+                        document.getElementById("BTNEN").style = "color:gray;"
+                        function RS() {
                             document.getElementById("BTNRS").style = "color:#1cb9ed;"
                             document.getElementById("BTNEN").style = "color:gray;"
                             window.location.href = "../contact.html";
-              
-                          }
-              
-                          function EN() {
+
+                        }
+
+                        function EN() {
                             document.getElementById("BTNEN").style = "color:#1cb9ed;"
                             document.getElementById("BTNRS").style = "color:gray;"
-                         
-                          }
-              
-              
-              
-              
-              
-              
-              
-              
-                        </script>
-                      </div>
-              
+
+                        }
+
+
+
+
+
+
+
+
+                    </script>
+                </div>
+
 
 
                 <div class="IFV2">
@@ -118,45 +118,47 @@
         </div>
         <header id="FAE_T">
 
-            <nav class="navbar navbar-expand-md navbar-dark fixed-top "style="text-align:center;" id="MENU1">
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                      <a class="nav-link active1" >HOME
-                        <span class="sr-only">(current)</span>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <div class="dropdown">
-        
-                        <a class="nav-link dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                          href="pr.html">PRODUCTS</a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                          <a class="dropdown-item" href="pr.html#TP">TOLIET PAPER
-                          </a>
-                          <a class="dropdown-item" href="pr2.html#KU">INDUSTRIAL PRODUCTS</a>
-                          <a class="dropdown-item" href="pr4.html#TS">LIQUID SOAP
-                          </a>
-                          <a class="dropdown-item" href="pr3.html#S">NAPKINS</a>
-                
-                        </div>
-                      </div>
-                    </li>
-                    <li class="nav-item float-right">
-                      <a class="nav-link " href="about.html">ABOUT</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link " href="contact.html">CONTACT</a>
-                    </li>
-                  </ul>
-      
-              </div>
+            <nav class="navbar navbar-expand-md navbar-dark fixed-top " style="text-align:center;" id="MENU1">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link zmouse" onclick="F_home()">
+                                HOME
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown">
+
+                                <a class="nav-link dropdown-toggle zmouse" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PRODUCTS</a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" zmouse" onclick="F_PR()">
+                                        TOLIET PAPER
+                                    </a>
+                                    <a class="dropdown-item" zmouse" onclick="FPR2()">INDUSTRIAL PRODUCTS</a>
+                                    <a class="dropdown-item" zmouse" onclick="FPR4()">
+                                        LIQUID SOAP
+                                    </a>
+                                    <a class="dropdown-item" zmouse" onclick="FPR3()">NAPKINS</a>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item float-right">
+                            <a class="nav-link  zmouse" onclick="aboutF()">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  zmouse" onclick="contactF()">CONTACT</a>
+                        </li>
+                    </ul>
+
+                </div>
             </nav>
-          </header>
+        </header>
 
         <main role="main">
 
@@ -164,7 +166,7 @@
 
 
             <div id="aboutT" class="CContact1">
-                 <section id="contact">
+                <section id="contact">
                     <div class="container">
 
 
@@ -208,34 +210,34 @@
                 <br />
                 <br />
                 <br />
-                </div>
+            </div>
 
-                <!-- /.container -->
+            <!-- /.container -->
 
 
-                <div id="futer">
-                    <div id="futerT">
-                        <p style="margin-left: 50%;">
-                            <button id="myBtn" onclick="topF()">
-                                <a title="Idi gore" href="#FAE_T">
-                                    <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                                </a>
-
-                            </button>
-                        </p>
-                        <p class="float-right">
-                            <a id="CF" href="#">
-                                KONTAKT
+            <div id="futer">
+                <div id="futerT">
+                    <p style="margin-left: 50%;">
+                        <button id="myBtn" onclick="topF()">
+                            <a title="Idi gore" href="#FAE_T">
+                                <i class="fa fa-chevron-up" aria-hidden="true"></i>
                             </a>
-                        </p>
-                        <p>
-                            &copy; 2004-2018 vm-pak, Inc. &middot;
-                            <a href="mailto:marko.supergun@gmail.com">Website by : Marko</a>
 
-                        </p>
-                    </div>
+                        </button>
+                    </p>
+                    <p class="float-right">
+                        <a id="CF" href="#">
+                            KONTAKT
+                        </a>
+                    </p>
+                    <p>
+                        &copy; 2004-2018 vm-pak, Inc. &middot;
+                        <a href="mailto:marko.supergun@gmail.com">Website by : Marko</a>
+
+                    </p>
                 </div>
-                <!-- FOOTER f-f-f>
+            </div>
+            <!-- FOOTER f-f-f>
         <footer class="container" id="Futer">
           <p class="float-right">
             <a title="Idi gore">

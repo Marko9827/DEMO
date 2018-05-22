@@ -61,36 +61,36 @@
             <div class="IF">
                 <!-- FA> -->
                 <!-- <FA -->
-                    <div id="dugmici">
-                        <button onclick="RS()" id="BTNRS">RS</button>
-                        <button onclick="EN()" id="BTNEN">EN</button>
-                        <script>
-                          //en
-                          document.getElementById("BTNRS").style = "color:#1cb9ed;"
-                          document.getElementById("BTNEN").style = "color:gray;"
-                          function RS() {
+                <div id="dugmici">
+                    <button onclick="RS()" id="BTNRS">RS</button>
+                    <button onclick="EN()" id="BTNEN">EN</button>
+                    <script>
+                        //en
+                        document.getElementById("BTNRS").style = "color:#1cb9ed;"
+                        document.getElementById("BTNEN").style = "color:gray;"
+                        function RS() {
                             document.getElementById("BTNRS").style = "color:#1cb9ed;"
                             document.getElementById("BTNEN").style = "color:gray;"
                             window.location.href = "../about.html";
-              
-                          }
-              
-                          function EN() {
+
+                        }
+
+                        function EN() {
                             document.getElementById("BTNEN").style = "color:#1cb9ed;"
                             document.getElementById("BTNRS").style = "color:gray;"
-                         
-                          }
-              
-              
-              
-              
-              
-              
-              
-              
-                        </script>
-                      </div>
-              
+
+                        }
+
+
+
+
+
+
+
+
+                    </script>
+                </div>
+
 
 
                 <div class="IFV2">
@@ -118,88 +118,90 @@
         </div>
         <header id="FAE_T">
 
-            <nav class="navbar navbar-expand-md navbar-dark fixed-top "style="text-align:center;" id="MENU1">
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav mr-auto">
-                  <li class="nav-item active">
-                    <a class="nav-link active1" >HOME
-                      <span class="sr-only">(current)</span>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <div class="dropdown">
-      
-                      <a class="nav-link dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                        href="pr.html">PRODUCTS</a>
-                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="pr.html#TP">TOLIET PAPER
-                        </a>
-                        <a class="dropdown-item" href="pr2.html#KU">INDUSTRIAL PRODUCTS</a>
-                        <a class="dropdown-item" href="pr4.html#TS">LIQUID SOAP
-                        </a>
-                        <a class="dropdown-item" href="pr3.html#S">NAPKINS</a>
-              
-                      </div>
-                    </div>
-                  </li>
-                  <li class="nav-item float-right">
-                    <a class="nav-link " href="about.html">ABOUT</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link " href="contact.html">CONTACT</a>
-                  </li>
-                </ul>
-      
-              </div>
+            <nav class="navbar navbar-expand-md navbar-dark fixed-top " style="text-align:center;" id="MENU1">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link zmouse" onclick="F_home()">
+                                HOME
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown">
+
+                                <a class="nav-link dropdown-toggle zmouse" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PRODUCTS</a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" zmouse" onclick="F_PR()">
+                                        TOLIET PAPER
+                                    </a>
+                                    <a class="dropdown-item" zmouse" onclick="FPR2()">INDUSTRIAL PRODUCTS</a>
+                                    <a class="dropdown-item" zmouse" onclick="FPR4()">
+                                        LIQUID SOAP
+                                    </a>
+                                    <a class="dropdown-item" zmouse" onclick="FPR3()">NAPKINS</a>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item float-right">
+                            <a class="nav-link  zmouse" onclick="aboutF()">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  zmouse" onclick="contactF()">CONTACT</a>
+                        </li>
+                    </ul>
+
+                </div>
             </nav>
-          </header>   <main role="main">
-            <div id="aboutT" class="abbt13">
-                <h3 class="h3onamas">About</h3>
+        </header>
+        <div id="aboutT" class="abbt13">
+            <h3 class="h3onamas">About</h3>
+            <p>
+                It is our pleasure to introduce ourselves to you. For over 14 years our company has been engaged in the production of paper confectionery.
+                Mission is the use of the highest quality raw materials, so that our users get quality, hygienic and healthcare completely correct products.   <br>
+                <br> Naš asortiman proizvoda sadrži: toalet papir, toalet ubruse, industrijske ubruse, složive ubruse, salvete
+                And liquid soap. In addition to making products under our name we also deal with service cutting and paper processing.     <br>
+                <br>We supply a large number of restaurants, pizzerias, hotels, cafes. Our customers are both wholesale and retail facilities.
+                <br>
+                <br>If you are interested in the products of our company, be free and contact us by phone or by e-mail. Our expert team is ready to offer you products from our range. We look forward to successful cooperation on mutual satisfaction. Welcome.
+                <br>
+            </p>
+        </div>
+        <iframe id="MapIframe" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11326.474310820362!2d20.328636466882315!3d44.788580845568475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ssr!2srs!4v1523818108830"></iframe>
+
+
+
+        <!-- /END THE FEATURETTES -->
+        <!-- /.container -->
+
+
+        <div id="futer">
+            <div id="futerT">
+                <p style="margin-left: 50%;">
+                    <button id="myBtn" onclick="topF()">
+                        <a title="Idi gore" href="#FAE_T">
+                            <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                        </a>
+
+                    </button>
+                </p>
+                <p class="float-right">
+                    <a id="CF" href="#">
+                        CONTACT
+                    </a>
+                </p>
                 <p>
-                  It is our pleasure to introduce ourselves to you. For over 14 years our company has been engaged in the production of paper confectionery. 
-                  Mission is the use of the highest quality raw materials, so that our users get quality, hygienic and healthcare completely correct products.   <br>
-                    <br> Naš asortiman proizvoda sadrži: toalet papir, toalet ubruse, industrijske ubruse, složive ubruse, salvete
-                    And liquid soap. In addition to making products under our name we also deal with service cutting and paper processing.     <br>
-                    <br>We supply a large number of restaurants, pizzerias, hotels, cafes. Our customers are both wholesale and retail facilities.
-                    <br>
-                    <br>If you are interested in the products of our company, be free and contact us by phone or by e-mail. Our expert team is ready to offer you products from our range. We look forward to successful cooperation on mutual satisfaction. Welcome.
-                    <br>
+                    &copy; 2004-2018 vm-pak, Inc. &middot;
+                    <a href="mailto:marko.supergun@gmail.com">Website by : Marko</a>
+
                 </p>
             </div>
-            <iframe id="MapIframe" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11326.474310820362!2d20.328636466882315!3d44.788580845568475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ssr!2srs!4v1523818108830"></iframe>
-
-
-
-            <!-- /END THE FEATURETTES -->
-            <!-- /.container -->
-
-
-            <div id="futer">
-                <div id="futerT">
-                    <p style="margin-left: 50%;">
-                        <button id="myBtn" onclick="topF()">
-                            <a title="Idi gore" href="#FAE_T">
-                                <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                            </a>
-
-                        </button>
-                    </p>
-                    <p class="float-right">
-                        <a id="CF" href="#">
-                            CONTACT
-                        </a>
-                    </p>
-                    <p>
-                        &copy; 2004-2018 vm-pak, Inc. &middot;
-                        <a href="mailto:marko.supergun@gmail.com">Website by : Marko</a>
-
-                    </p>
-                </div>
-            </div>
+        </div>
 
         </main>
     </div>

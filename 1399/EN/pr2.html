@@ -44,36 +44,36 @@
             <div class="IF">
                 <!-- FA> -->
                 <!-- <FA -->
-                    <div id="dugmici">
-                        <button onclick="RS()" id="BTNRS">RS</button>
-                        <button onclick="EN()" id="BTNEN">EN</button>
-                        <script>
-                          //en
-                          document.getElementById("BTNRS").style = "color:#1cb9ed;"
-                          document.getElementById("BTNEN").style = "color:gray;"
-                          function RS() {
+                <div id="dugmici">
+                    <button onclick="RS()" id="BTNRS">RS</button>
+                    <button onclick="EN()" id="BTNEN">EN</button>
+                    <script>
+                        //en
+                        document.getElementById("BTNRS").style = "color:#1cb9ed;"
+                        document.getElementById("BTNEN").style = "color:gray;"
+                        function RS() {
                             document.getElementById("BTNRS").style = "color:#1cb9ed;"
                             document.getElementById("BTNEN").style = "color:gray;"
                             window.location.href = "../pr2.html";
-              
-                          }
-              
-                          function EN() {
+
+                        }
+
+                        function EN() {
                             document.getElementById("BTNEN").style = "color:#1cb9ed;"
                             document.getElementById("BTNRS").style = "color:gray;"
-                         
-                          }
-              
-              
-              
-              
-              
-              
-              
-              
-                        </script>
-                      </div>
-              
+
+                        }
+
+
+
+
+
+
+
+
+                    </script>
+                </div>
+
 
 
                 <div class="IFV2">
@@ -101,52 +101,54 @@
         </div>
         <header id="FAE_T">
 
-            <nav class="navbar navbar-expand-md navbar-dark fixed-top "style="text-align:center;" id="MENU1">
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                      <a class="nav-link active1" >HOME
-                        <span class="sr-only">(current)</span>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <div class="dropdown">
-        
-                        <a class="nav-link dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                          href="pr.html">PRODUCTS</a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                          <a class="dropdown-item" href="pr.html#TP">TOLIET PAPER
-                          </a>
-                          <a class="dropdown-item" href="pr2.html#KU">INDUSTRIAL PRODUCTS</a>
-                          <a class="dropdown-item" href="pr4.html#TS">LIQUID SOAP
-                          </a>
-                          <a class="dropdown-item" href="pr3.html#S">NAPKINS</a>
-                
-                        </div>
-                      </div>
-                    </li>
-                    <li class="nav-item float-right">
-                      <a class="nav-link " href="about.html">ABOUT</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link " href="contact.html">CONTACT</a>
-                    </li>
-                  </ul>
-      
-              </div>
+            <nav class="navbar navbar-expand-md navbar-dark fixed-top " style="text-align:center;" id="MENU1">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link zmouse" onclick="F_home()">
+                                HOME
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown">
+
+                                <a class="nav-link dropdown-toggle zmouse" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PRODUCTS</a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" zmouse" onclick="F_PR()">
+                                        TOLIET PAPER
+                                    </a>
+                                    <a class="dropdown-item" zmouse" onclick="FPR2()">INDUSTRIAL PRODUCTS</a>
+                                    <a class="dropdown-item" zmouse" onclick="FPR4()">
+                                        LIQUID SOAP
+                                    </a>
+                                    <a class="dropdown-item" zmouse" onclick="FPR3()">NAPKINS</a>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item float-right">
+                            <a class="nav-link  zmouse" onclick="aboutF()">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  zmouse" onclick="contactF()">CONTACT</a>
+                        </li>
+                    </ul>
+
+                </div>
             </nav>
-          </header>
+        </header>
         <main role="main">
 
 
 
 
             <!-- Marketing messaging and featurettes
-              ================================================== -->
+          ================================================== -->
             <!-- Wrap the rest of the page in another container to center all the content. -->
 
             <div class="container marketing">
@@ -156,75 +158,80 @@
                 <!-- START THE FEATURETTES -->
 
                 <div id="main1">
-                           <!--<button id="Bsve" onclick="Bsve()">
-                            <a>SVI PROIZVODI</a>
-                        </button>--> 
-                        <a id="B1" onclick="B1()">
-                            Toilet paper                        </a>
-                       <!-- <a id="B2" onclick="B2()">
-                        KUHINJSKI UBRUS
-                        </a>
-                    -->    <a id="B3" onclick="B3()">
-                        Industrial products                        <!--
-                        <button id="B4" onclick="B4()">
-                        INDUSTRIJSKI UBRUS
-                        </button> -->
+                    <!--<button id="Bsve" onclick="Bsve()">
+                    <a>SVI PROIZVODI</a>
+                </button>-->
+                    <a id="B1" onclick="B1()">
+                        Toilet paper
+                    </a>
+                    <!-- <a id="B2" onclick="B2()">
+                    KUHINJSKI UBRUS
+                    </a>
+                -->
+                    <a id="B3" onclick="B3()">
+                        Industrial products
+                        <!--
+                    <button id="B4" onclick="B4()">
+                    INDUSTRIJSKI UBRUS
+                    </button> -->
                         <a id="B5" onclick="B5()">
-                            Napkins                        </a>
+                            Napkins
+                        </a>
                         <a id="B6" onclick="B6()">
-                            Liquid soap                        </a>
+                            Liquid soap
+                        </a>
 
 
 
                         <script>
-                        
-                        
-                        document.getElementById("galerija").src = "pr_TP4.html";
-    document.getElementById("B1").style = "border-bottom: 2px #1cb9ed solid;";
-    document.getElementById("B2").style = "border-bottom: 0px #1cb9ed solid;";
-    document.getElementById("B3").style = "border-bottom: 0px #1cb9ed solid;";
-    document.getElementById("B4").style = "border-bottom: 0px #1cb9ed solid;";
-    document.getElementById("B5").style = "border-bottom: 0px #1cb9ed solid;";
-    document.getElementById("B6").style = "border-bottom: 0px #1cb9ed solid;";
+
+
+                            document.getElementById("galerija").src = "pr_TP4.html";
+                            document.getElementById("B1").style = "border-bottom: 2px #1cb9ed solid;";
+                            document.getElementById("B2").style = "border-bottom: 0px #1cb9ed solid;";
+                            document.getElementById("B3").style = "border-bottom: 0px #1cb9ed solid;";
+                            document.getElementById("B4").style = "border-bottom: 0px #1cb9ed solid;";
+                            document.getElementById("B5").style = "border-bottom: 0px #1cb9ed solid;";
+                            document.getElementById("B6").style = "border-bottom: 0px #1cb9ed solid;";
                         </script>
                         <!--<script>
-                            function B1() {
-                                document.getElementById("galerija").src = "pr_TP2.html";
-                                document.getElementById("Bsve").style = "border-bottom: 0px #1cb9ed solid;";
-                                alert("b1");
-                                document.getElementById("B1").style = "border-bottom: 2px #1cb9ed solid;";
-                                document.getElementById("B2").style = "border-bottom: 0px #1cb9ed solid;";
-                                document.getElementById("B3").style = "border-bottom: 0px #1cb9ed solid;";
-                                document.getElementById("B4").style = "border-bottom: 0px #1cb9ed solid;";
-                                document.getElementById("B5").style = "border-bottom: 0px #1cb9ed solid;";
-                                document.getElementById("B6").style = "border-bottom: 0px #1cb9ed solid;";
+                        function B1() {
+                            document.getElementById("galerija").src = "pr_TP2.html";
+                            document.getElementById("Bsve").style = "border-bottom: 0px #1cb9ed solid;";
+                            alert("b1");
+                            document.getElementById("B1").style = "border-bottom: 2px #1cb9ed solid;";
+                            document.getElementById("B2").style = "border-bottom: 0px #1cb9ed solid;";
+                            document.getElementById("B3").style = "border-bottom: 0px #1cb9ed solid;";
+                            document.getElementById("B4").style = "border-bottom: 0px #1cb9ed solid;";
+                            document.getElementById("B5").style = "border-bottom: 0px #1cb9ed solid;";
+                            document.getElementById("B6").style = "border-bottom: 0px #1cb9ed solid;";
 
-                            }
-                            function B2() {
-                                document.getElementById("galerija").src = "pr_TP3.html";
-                                document.getElementById("Bsve").style = "border-bottom: 0px #1cb9ed solid;";
+                        }
+                        function B2() {
+                            document.getElementById("galerija").src = "pr_TP3.html";
+                            document.getElementById("Bsve").style = "border-bottom: 0px #1cb9ed solid;";
 
-                       
-                                document.getElementById("B1").style = "border-bottom: 0px #1cb9ed solid;";
-                                document.getElementById("B2").style = "border-bottom: 2px #1cb9ed solid;";
-                                document.getElementById("B3").style = "border-bottom: 0px #1cb9ed solid;";
-                                document.getElementById("B4").style = "border-bottom: 0px #1cb9ed solid;";
-                                document.getElementById("B5").style = "border-bottom: 0px #1cb9ed solid;";
-                                document.getElementById("B6").style = "border-bottom: 0px #1cb9ed solid;";
-                            }
-                        </script>-->
-                    </div>
-                    <script>
 
-                    </script>
-                    <iframe id="galerija" src="pr_TP4.html"></iframe>
-
+                            document.getElementById("B1").style = "border-bottom: 0px #1cb9ed solid;";
+                            document.getElementById("B2").style = "border-bottom: 2px #1cb9ed solid;";
+                            document.getElementById("B3").style = "border-bottom: 0px #1cb9ed solid;";
+                            document.getElementById("B4").style = "border-bottom: 0px #1cb9ed solid;";
+                            document.getElementById("B5").style = "border-bottom: 0px #1cb9ed solid;";
+                            document.getElementById("B6").style = "border-bottom: 0px #1cb9ed solid;";
+                        }
+                    </script>-->
                 </div>
-                <hr class="featurette-divider">
+                <script>
 
-                <!-- /END THE FEATURETTES -->
+                </script>
+                <iframe id="galerija" src="pr_TP4.html"></iframe>
 
             </div>
+            <hr class="featurette-divider">
+
+            <!-- /END THE FEATURETTES -->
+
+    </div>
             <!-- /.container -->
           
 

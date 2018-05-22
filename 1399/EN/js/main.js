@@ -12,13 +12,49 @@ document.addEventListener("selectstart", function (e) { e.preventDefault() }, fa
 */
 
 
-function topF(){
+
+
+function topF() {
     document.body.scrollTop -= 1;
     document.documentElement.scrollTop = 0;
 }
 
-function homeF(){
+function homeF() {
     window.location.href = 'index.html';
+}
+
+
+
+
+function F_home() {
+    window.location.href = 'index.html';
+}
+
+
+//ajtemi _
+function F_PR() {
+    window.location.href = 'pr.html';
+}
+
+function FPR2() {
+    window.location.href = 'pr2.html';
+}
+
+function FPR4() {
+    window.location.href = 'pr3.html';
+}
+
+function FPR3() {
+    window.location.href = 'pr4.html';
+}
+
+//ajtemi kraj
+
+function aboutF() {
+    window.location.href = 'about.html';
+}
+function contactF() {
+    window.location.href = 'contact.html';
 }
 
 /*
