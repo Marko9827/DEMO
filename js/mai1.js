@@ -23,5 +23,23 @@ function valid() {
      
     
     }
+
+    if (validtxt.value == "439698") {
+
+
+        valid_F.style = "display: none;";
+        valid_D.src = "439698/"
+        valid_D.style = "display:block;";
+
+    }
+    else {
+        validtxt.style = "border: 1px rgba(255, 33, 33, 0.80) solid; ";
+        btn131.style = "background-color: rgba(255, 33, 33, 0.80);";
+        btn131.textContent = "Kod nije validan! Probaj ponovo. | Pokreni DEMO";
+
+
+
+
+    }
    
 } /*rgba(218, 165, 32, 0.80)*/
