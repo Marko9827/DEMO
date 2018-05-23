@@ -13,12 +13,17 @@ body {
     background: #f1f1f1;
 }
 
+
+
+
 /* Header/Blog Title */
 .header {
     padding: 30px;
     font-size: 40px;
     text-align: center;
     background: white;
+padding-left: 0px;
+    padding-right: 0px;
 }
 
 /* Create two unequal columns that floats next to each other */
@@ -54,6 +59,7 @@ body {
     content: "";
     display: table;
     clear: both;
+    
 }
 
 /* Footer */
@@ -77,11 +83,46 @@ font-size: 25px;
 color: silver;
 }
 
+.logo2{
+    height: 37px;
+    border-top-left-radius: 9px;
+    border-bottom-left-radius: 9px;
+
+}
+
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 991px) {
     .leftcolumn, .rightcolumn {
         width: 100%;
         padding: 0;
     }
+
+    .logo2 {
+        display: none;
+    }
+}
+#navbarSupportedContent img {
+    height: 37px;
+}
+/*@media screen and (max-width: 991) {
+
+    .logo2 {
+        display: none;
+    }
+
+}*/
+.navbar .navbar-toggler, .navbar-toggler-icon{
+    border: 0px white solid;
+    color: white;
 }
 
+.navbar-toggler img {
+    border-radius: 15px;
+    height: 37px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.nav-item {
+    padding-left: 15px;
+}

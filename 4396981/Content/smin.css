@@ -1,0 +1,39 @@
+* , body {
+    position: relative;
+    
+}
+
+
+.box-shadow {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.1);
+    border-radius: 10px;
+    padding: 0px;
+    
+}
+
+
+body{
+    margin: 100px;
+}
+.navbar{
+
+ border-radius: 10px;
+ background: linear-gradient(#496fb5, #204487);
+ color: white;
+ font-size: 14px;
+    
+    
+
+ 
+}
+
+.nav-link{
+  color: white;
+}
+
+.navbar .nav-item .nav-link  {
+  color: white;
+     padding-right: 15px;  
+    border-right: 1px solid #909CBF; 
+}
+
