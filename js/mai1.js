@@ -1,4 +1,6 @@
 ﻿document.getElementById("valid1").style = "display:none;";
+
+//aefeafea
 function valid() {
     var validtxt = document.getElementById("back1");
     var btn131 = document.getElementById("btn13");
