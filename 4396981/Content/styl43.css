@@ -1,9 +1,10 @@
 
-* {
+*, body {
     box-sizing: border-box;
-    
+    position: relative;
 }
-.nav-link,.dropdown-item{
+
+.nav-link, .dropdown-item {
     cursor: pointer;
 }
 /* Add a gray background color with some padding */
@@ -22,7 +23,7 @@ body {
     font-size: 40px;
     text-align: center;
     background: white;
-padding-left: 0px;
+    padding-left: 0px;
     padding-right: 0px;
 }
 
@@ -30,14 +31,14 @@ padding-left: 0px;
 /* Left column */
 .leftcolumn {
     float: left;
-    width: 75%;  padding-left: 20px;
+    width: 75%;
+    padding-left: 20px;
 }
 
 /* Right column */
 .rightcolumn {
     float: left;
     width: 25%;
-  
 }
 
 /* Fake image */
@@ -51,7 +52,8 @@ padding-left: 0px;
 .card {
     background-color: white;
     padding: 20px;
-    margin-top: 20px;     box-shadow: 0 1px 2px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.1);
+    margin-top: 20px;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.1);
 }
 
 /* Clear floats after the columns */
@@ -59,7 +61,6 @@ padding-left: 0px;
     content: "";
     display: table;
     clear: both;
-    
 }
 
 /* Footer */
@@ -69,25 +70,28 @@ padding-left: 0px;
     background: #ddd;
     margin-top: 20px;
     margin-bottom: -90px;
-       box-shadow: 0 2px 8px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.1);
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.1);
     border-radius: 10px;
-
 }
 
-.footer h2{
-    font-size: 13pt;
-    
-}
-.footer a {
-font-size: 25px;
-color: silver;
-}
+    .footer h2 {
+        font-size: 13pt;
+    }
 
-.logo2{
+    .footer a {
+        font-size: 25px;
+        color: silver;
+    }
+
+.logo2 {
     height: 37px;
     border-top-left-radius: 9px;
     border-bottom-left-radius: 9px;
+}
 
+
+.all {
+    margin: 100px;
 }
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
@@ -100,7 +104,16 @@ color: silver;
     .logo2 {
         display: none;
     }
+
+    .all {
+        margin: 0px;
+    }
 }
+
+#jssor_1{
+  border-radius: 15px;    box-shadow: 0 2px 8px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.1);
+}
+
 #navbarSupportedContent img {
     height: 37px;
 }
@@ -111,9 +124,15 @@ color: silver;
     }
 
 }*/
-.navbar .navbar-toggler, .navbar-toggler-icon{
+
+.navbar-toggler {
+    /*background: linear-gradient(#496fb5, #204487);*/
+}
+
+.navbar .navbar-toggler, .navbar-toggler-icon {
     border: 0px white solid;
     color: white;
+    /*background: linear-gradient(#496fb5, #204487);*/
 }
 
 .navbar-toggler img {
@@ -126,3 +145,77 @@ color: silver;
 .nav-item {
     padding-left: 15px;
 }
+
+
+/* ** * ** */
+/*jssor slider loading skin spin css*/
+.jssorl-009-spin img {
+    animation-name: jssorl-009-spin;
+    animation-duration: 1.6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes jssorl-009-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/*jssor slider bullet skin 051 css*/
+.jssorb051 .i {
+    position: absolute;
+    cursor: pointer;
+}
+
+    .jssorb051 .i .b {
+        fill: #fff;
+        fill-opacity: 0.5;
+    }
+
+    .jssorb051 .i:hover .b {
+        fill-opacity: .7;
+    }
+
+.jssorb051 .iav .b {
+    fill-opacity: 1;
+}
+
+.jssorb051 .i.idn {
+    opacity: .3;
+}
+
+/*jssor slider arrow skin 051 css*/
+.jssora051 {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+}
+
+    .jssora051 .a {
+        fill: none;
+        stroke: #fff;
+        stroke-width: 360;
+        stroke-miterlimit: 10;
+    }
+
+    .jssora051:hover {
+        opacity: .8;
+    }
+
+    .jssora051.jssora051dn {
+        opacity: .5;
+    }
+
+    .jssora051.jssora051ds {
+        opacity: .3;
+        pointer-events: none;
+    }
+
+
+
+/* ** * ** */
