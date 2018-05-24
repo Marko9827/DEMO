@@ -12,53 +12,188 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
     <link rel="stylesheet" href="Content/smin.css" />
+    
 </head>
 <body>
+ <div class="all">
     <div class="header">
         <h2>Sajt ime </h2>
+        <p id="demo"></p>
+        <script>
+            document.getElementById("demo").innerHTML =
+                "navigator.appName is " + navigator.language;
+        </script>
     </div>
     <header class="box-shadow">
         <nav class="navbar navbar-expand-lg navbar-light bg-light box-shadow">
-            <div class="navbar-toggler" style="color:white;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="navbar-toggler" style="color:white; cursor:pointer;" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon" style="color:white;"></span>
                 <img src="Content/img/GBNf.png" class="logo1" />
             </div>
 
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <img src="Content/img/GBNf.png" class="logo2"/>
+                <img src="Content/img/GBNf.png" class="logo2" />
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" >Home</a>
+                        <a class="nav-link">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" >Events</a>
+                        <a class="nav-link">Events</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Dropdown MENI
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" >Action</a>
-                            <a class="dropdown-item" >Another action</a>
+                            <a class="dropdown-item">Action</a>
+                            <a class="dropdown-item">Another action</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" >Something else here</a>
+                            <a class="dropdown-item">Something else here</a>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " >Par</a>
+                        <a class="nav-link ">Par</a>
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
-                    <a class="nav-link " >Forum Global</a>
+                    <a class="nav-link ">Forum Global</a>
                 </form>
             </div>
         </nav>
     </header>
 
-    <div class="fa-sliders">
+    <!-- #region Slider  -->
+  
+    <script src="Content/ss/32f/js/jssor.slider-27.1.0.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        jssor_1_slider_init = function () {
 
+            var jssor_1_SlideshowTransitions = [
+                { $Duration: 800, $Opacity: 2 }
+            ];
+
+            var jssor_1_options = {
+                $AutoPlay: 1,
+                $SlideshowOptions: {
+                    $Class: $JssorSlideshowRunner$,
+                    $Transitions: jssor_1_SlideshowTransitions,
+                    $TransitionsOrder: 1
+                },
+                $ArrowNavigatorOptions: {
+                    $Class: $JssorArrowNavigator$
+                },
+                $BulletNavigatorOptions: {
+                    $Class: $JssorBulletNavigator$
+                }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*#region responsive code begin*/
+
+            var MAX_WIDTH = 980;
+
+            function ScaleSlider() {
+                var containerElement = jssor_1_slider.$Elmt.parentNode;
+                var containerWidth = containerElement.clientWidth;
+
+                if (containerWidth) {
+
+                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                    jssor_1_slider.$ScaleWidth(expectedWidth);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+
+            ScaleSlider();
+
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            /*#endregion responsive code end*/
+        };
+    </script>
+    <style>
+      
+    </style>
+    <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:380px;overflow:hidden;visibility:hidden;">
+        <!-- Loading Screen -->
+        <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
+        </div>
+        <div data-u="slides" class="sliderContent1" style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:380px;overflow:hidden;">
+            <div data-p="170.00">
+                <img data-u="image" src="Content/ss/32f/img/001.jpg" />
+            </div>
+            <div data-p="170.00">
+                <img data-u="image" src="Content/ss/32f/img/002.jpg" />
+            </div>
+            <div data-p="170.00">
+                <img data-u="image" src="Content/ss/32f/img/003.jpg" />
+            </div>
+            <div data-p="170.00">
+                <img data-u="image" src="Content/ss/32f/img/004.jpg" />
+            </div>
+            <div data-p="170.00">
+                <img data-u="image" src="Content/ss/32f/img/005.jpg" />
+            </div>
+            <div data-p="170.00">
+                <img data-u="image" src="Content/ss/32f/img/006.jpg" />
+            </div>
+            <div data-p="170.00">
+                <img data-u="image" src="Content/ss/32f/img/007.jpg" />
+            </div>
+            <div data-p="170.00">
+                <img data-u="image" src="Content/ss/32f/img/008.jpg" />
+            </div>
+            <div data-p="170.00">
+                <img data-u="image" src="Content/ss/32f/img/009.jpg" />
+            </div>
+            <div data-p="170.00">
+                <img data-u="image" src="Content/ss/32f/img/010.jpg" />
+            </div>
+            <div data-p="170.00">
+                <img data-u="image" src="Content/ss/32f/img/011.jpg" />
+            </div>
+            <div data-p="170.00">
+                <img data-u="image" src="Content/ss/32f/img/012.jpg" />
+            </div>
+        </div>
+        <!-- Bullet Navigator -->
+        <div data-u="navigator" class="jssorb051" style="position:absolute;bottom:12px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+            <div data-u="prototype" class="i" style="width:16px;height:16px;">
+                <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                    <circle class="b" cx="8000" cy="8000" r="5800"></circle>
+                </svg>
+            </div>
+        </div>
+        <!-- Arrow Navigator -->
+        <div data-u="arrowleft" class="jssora051" style="width:55px;height:55px;top:0px;left:25px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
+            </svg>
+        </div>
+        <div data-u="arrowright" class="jssora051" style="width:55px;height:55px;top:0px;right:25px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
+            </svg>
+        </div>
     </div>
+
+
+
+
+
+
+
+    <script type="text/javascript">jssor_1_slider_init();</script>
+
+
+
 
     <div class="row">
         <div class="rightcolumn">
@@ -110,13 +245,14 @@
             <br />
             TEKST JE GENERISAN PREKO WORD COMANDE ( RANDOM )
         </h2>
-     
-     
-      <a><i class="fa fa fa-twitter-square"></i></a>
-     <a><i class="fa fa fa-facebook-square"></i></a>
-     <a><i class="fa fa fa-linkedin-square"></i></a>
-    <a><i class="fa fa fa-youtube-square"></i></a>
+
+
+        <a><i class="fa fa fa-twitter-square"></i></a>
+        <a><i class="fa fa fa-facebook-square"></i></a>
+        <a><i class="fa fa fa-linkedin-square"></i></a>
+        <a><i class="fa fa fa-youtube-square"></i></a>
     </div>
+     </div>
     <script src="Scripts/jquery-3.3.1.js"></script>
     <script src="Scripts/umd/popper.min.js"></script>
     <script src="Scripts/bootstrap.min.js"></script>
