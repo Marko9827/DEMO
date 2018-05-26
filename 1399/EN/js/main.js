@@ -2,7 +2,7 @@
 function cof(){
     
 document.getElementById("IF3").style = "display:none;";
-document.getElementById("ne").style = "display:block;"
+    document.getElementById("ne").style = "display:block;";
 }
 
 
