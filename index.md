@@ -1,12 +1,1 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <title></title>
-</head>
-<body>
-    <script>
-        window.location.href = '/';
-    </script>
-</body>
-</html>
+<script>window.location.href = 'http://login.eronelit.com/';</script>
