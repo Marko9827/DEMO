@@ -180,7 +180,7 @@ function valid() {
         btn131.textContent = "SESIJA ISTEKLA. | Pokreni DEMO";
         validtxt.style = "border: 1px rgba(123, 0, 255, 0.80) solid; ";
         btn131.style = "background-color: rgba(123, 0, 255, 0.80);";
-        alert("f");
+        
         return false;
     }
     else {
