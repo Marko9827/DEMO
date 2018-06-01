@@ -44,7 +44,7 @@ function loop() {
 
     tick += opts.hueSpeed;
 
-    ctx.shadowBlur = 0;
+    ctx.shadowBlur = 5;
     // ctx.fillStyle = 'rgba(41,53,64,alp)'.replace( 'alp', opts.repaintAlpha );
     ctx.fillStyle = 'rgba(225,225,225,alp)'.replace('alp', opts.repaintAlpha);
     ctx.fillRect(0, 0, w, h);
@@ -132,10 +132,15 @@ window.addEventListener('resize', function () {
     }
 })
 
+var slikarandom1;
 
+slikarandom1 = 'earearear';
+var mojaboja = ['rgba(44, 80, 203, alp)', 'rgba(76, 196, 47,alp)', 'rgba(255, 44, 44,alp)'];
+var bojadns = ['rgba(44, 80, 203, alp)', 'rgba(76, 196, 47,alp)', 'rgba(255, 44, 44,alp)'];
 
-opts.colors = ['rgba(44, 80, 203, alp)', 'rgba(218, 165, 32,alp)', 'rgba(255,255,255,alp)'];
+opts.colors = ['rgba(121,189,224,alp)', 'rgba(225,235,245,alp)', 'rgba(255,255,255,alp)'];
 
+//opts.colors = [slikarandom1, 'rgba(218, 165, 32,alp)', 'rgba(255,255,255,alp)'];
 
 
 /* LICENSA HTTPS://sdk.eronelit.com | DOZVOLJENA A53F27B3-825E-4150-A0BD-596712B68C5E */

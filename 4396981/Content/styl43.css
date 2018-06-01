@@ -29,8 +29,12 @@ body {
 #navbarSupportedContent .GBNAEJU a:hover {
     color: #496fb5;
     background: white;
-}
 
+}
+#navbarSupportedContent .GBNAEJU .nav-link {
+    border-top-right-radius: 9px;
+    border-bottom-right-radius: 9px;
+}
 .this1{
     cursor: pointer;
 }
