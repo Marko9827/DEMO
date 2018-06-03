@@ -44,7 +44,7 @@ function loop() {
 
     tick += opts.hueSpeed;
 
-    ctx.shadowBlur = 5;
+    ctx.shadowBlur = 0;
     // ctx.fillStyle = 'rgba(41,53,64,alp)'.replace( 'alp', opts.repaintAlpha );
     ctx.fillStyle = 'rgba(225,225,225,alp)'.replace('alp', opts.repaintAlpha);
     ctx.fillRect(0, 0, w, h);
