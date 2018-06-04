@@ -1,0 +1,52 @@
+<!doctype html>
+
+<title>eronelit_editorv3: Closebrackets Demo</title>
+<meta charset="utf-8"/>
+<link rel=stylesheet href="../doc/docs.css">
+
+<link rel="stylesheet" href="../lib/eronelit_editorv3.css">
+<script src="../lib/eronelit_editorv3.js"></script>
+<script src="../addon/edit/closebrackets.js"></script>
+<script src="../mode/javascript/javascript.js"></script>
+<style type="text/css">
+      .eronelit_editorv3 {border-top: 1px solid #888; border-bottom: 1px solid #888;}
+    </style>
+<div id=nav>
+  <a href="http://eronelit_editorv3.net"><h1>eronelit_editorv3</h1><img id=logo src="../doc/logo.png"></a>
+
+  <ul>
+    <li><a href="../index.html">Home</a>
+    <li><a href="../doc/manual.html">Manual</a>
+    <li><a href="https://github.com/eronelit_editorv3/eronelit_editorv3">Code</a>
+  </ul>
+  <ul>
+    <li><a class=active href="#">Closebrackets</a>
+  </ul>
+</div>
+
+<article>
+<h2>Closebrackets Demo</h2>
+<form><textarea id="code" name="code">function Grid(width, height) {
+  this.width = width;
+  this.height = height;
+  this.cells = new Array(width * height);
+}
+Grid.prototype.valueAt = function(point) {
+  return this.cells[point.y * this.width + point.x];
+};
+Grid.prototype.setValueAt = function(point, value) {
+  this.cells[point.y * this.width + point.x] = value;
+};
+Grid.prototype.isInside = function(point) {
+  return point.x >= 0 && point.y >= 0 &&
+         point.x < this.width && point.y < this.height;
+};
+Grid.prototype.moveValue = function(from, to) {
+  this.setValueAt(to, this.valueAt(from));
+  this.setValueAt(from, undefined);
+};</textarea></form>
+
+    <script type="text/javascript">
+      var editor = eronelit_editorv3.fromTextArea(document.getElementById("code"), {autoCloseBrackets: true});
+    </script>
+  </article>

@@ -166,8 +166,33 @@ function valid() {
     var validtxt = document.getElementById("back1");
     var btn131 = document.getElementById("btn13");
     var valid_F = document.getElementById("valid"); //dole
-    var valid_D = document.getElementById("valid1"); //gore
+    var valid_D = document.getElementById("valid1"); //goretitl_f
+    var tekst = document.getElementById("titl_f");
 
+
+    if (validtxt.value == "9827") {
+        valid_F.style = "display: none;";
+        valid_D.src = "js/E20439234235F/";
+        valid_D.style = "display:block;";
+        tekst.value = "Eronelit demo | SDK ONLINE";
+
+
+        //#
+
+
+        //#
+    }
+    else {
+        validtxt.style = "border: 1px rgba(255, 33, 33, 0.80) solid; ";
+        btn131.style = "background-color: rgba(255, 33, 33, 0.80);";
+        btn131.textContent = "Kod nije validan! Probaj ponovo. | Pokreni DEMO";
+
+
+        //1
+        opts.colors = ['rgba(255, 33, 33, alp)', 'rgba(218, 165, 32,alp)', 'rgba(255,255,255,alp)'];
+
+
+    }
 
     if (validtxt.value == "139") {
 
@@ -180,7 +205,6 @@ function valid() {
         btn131.textContent = "SESIJA ISTEKLA. | Pokreni DEMO";
         validtxt.style = "border: 1px rgba(123, 0, 255, 0.80) solid; ";
         btn131.style = "background-color: rgba(123, 0, 255, 0.80);";
-        
         return false;
     }
     else {

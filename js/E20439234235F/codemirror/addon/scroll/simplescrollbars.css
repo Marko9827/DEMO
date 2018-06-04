@@ -1,0 +1,66 @@
+.eronelit_editorv3-simplescroll-horizontal div, .eronelit_editorv3-simplescroll-vertical div {
+  position: absolute;
+  background: #ccc;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #bbb;
+  border-radius: 2px;
+}
+
+.eronelit_editorv3-simplescroll-horizontal, .eronelit_editorv3-simplescroll-vertical {
+  position: absolute;
+  z-index: 6;
+  background: #eee;
+}
+
+.eronelit_editorv3-simplescroll-horizontal {
+  bottom: 0; left: 0;
+  height: 8px;
+}
+.eronelit_editorv3-simplescroll-horizontal div {
+  bottom: 0;
+  height: 100%;
+}
+
+.eronelit_editorv3-simplescroll-vertical {
+  right: 0; top: 0;
+  width: 8px;
+}
+.eronelit_editorv3-simplescroll-vertical div {
+  right: 0;
+  width: 100%;
+}
+
+
+.eronelit_editorv3-overlayscroll .eronelit_editorv3-scrollbar-filler, .eronelit_editorv3-overlayscroll .eronelit_editorv3-gutter-filler {
+  display: none;
+}
+
+.eronelit_editorv3-overlayscroll-horizontal div, .eronelit_editorv3-overlayscroll-vertical div {
+  position: absolute;
+  background: #bcd;
+  border-radius: 3px;
+}
+
+.eronelit_editorv3-overlayscroll-horizontal, .eronelit_editorv3-overlayscroll-vertical {
+  position: absolute;
+  z-index: 6;
+}
+
+.eronelit_editorv3-overlayscroll-horizontal {
+  bottom: 0; left: 0;
+  height: 6px;
+}
+.eronelit_editorv3-overlayscroll-horizontal div {
+  bottom: 0;
+  height: 100%;
+}
+
+.eronelit_editorv3-overlayscroll-vertical {
+  right: 0; top: 0;
+  width: 6px;
+}
+.eronelit_editorv3-overlayscroll-vertical div {
+  right: 0;
+  width: 100%;
+}

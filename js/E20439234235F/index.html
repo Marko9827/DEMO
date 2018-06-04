@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"><!--<![endif]-->
+
+                               <head>
+                                  
+                                   <!--general meta information-->
+                                   <meta charset="utf-8">
+                               
+                                   <!--mobile specific meta information-->
+                                   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+                                   <!--sitemap-->
+                                   <link rel="alternate" type="application/rss+xml" title="Editor ~ Sitemap" href=" sitemap.xml">
+
+                              
+                                   <meta name="theme-color" content="#282a36">
+
+                                   <!--font styles-->
+                                   <link rel="stylesheet prefetch prerender" href="https://cdn.rawgit.com/tonsky/FiraCode/1.205/distr/fira_code.css" data-noprefix>
+                                   <link rel="stylesheet prefetch prerender" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700" data-noprefix>
+
+                                   <!--jquery ui styles-->
+                                   <link rel="stylesheet" href=" css/jquery-ui.min.css">
+                                   <link rel="stylesheet" href=" css/jquery-ui.structure.min.css">
+
+                                   <!--codemirror styles-->
+                                   <link rel="stylesheet" href="codemirror/lib/codemirror.css">
+                                   <link rel="stylesheet" href="codemirror/addon/fold/foldgutter.css">
+                                   <link rel="stylesheet" href="codemirror/addon/scroll/simplescrollbars.css">
+                                   <link rel="stylesheet" href="codemirror/theme/eronelit_theme.css">
+
+                                   <!--requried styles-->
+                                   <link rel="stylesheet" href="css/styles.css">
+                                   <!--<link rel="stylesheet" href="js/fonts/D3/D3.css" />-->
+                                   <link rel="stylesheet" href="../js/fonts/D3/D3.css" />
+                                   <link rel="stylesheet" href="css/SSF.css" />
+                                   <!--html5 shiv-->
+                                   
+                                   <!--[if lt IE 9]><script src=" js/html5shiv-printshiv.min.js"></script><![endif]-->
+                                   <!--required scripts-->
+                                   <script src=" js/prefixfree.min.js"></script>
+                                   <script src=" js/jquery.min.js"></script>
+                                   <script src=" js/jquery-ui.min.js"></script>
+
+                                   <!--codemirror main-->
+                                   <script src=" codemirror/lib/codemirror.js"></script>
+
+                                   <!--codemirror modes-->
+                                   <script src=" codemirror/mode/xml/xml.js"></script>
+                                   <script src=" codemirror/mode/css/css.js"></script>
+                                   <script src=" codemirror/mode/javascript/javascript.js"></script>
+
+                                   <!--codemirror addons-->
+                                   <script src="codemirror/addon/fold/xml-fold.js"></script>
+                                   <script src="codemirror/addon/fold/foldcode.js"></script>
+                                   <script src="codemirror/addon/fold/foldgutter.js"></script>
+                                   <script src="codemirror/addon/fold/brace-fold.js"></script>
+                                   <script src="codemirror/addon/edit/matchtags.js"></script>
+                                   <script src="codemirror/addon/edit/matchbrackets.js"></script>
+                                   <script src="codemirror/addon/edit/closetag.js"></script>
+                                   <script src="codemirror/addon/edit/closebrackets.js"></script>
+                                   <script src="codemirror/addon/scroll/simplescrollbars.js"></script>
+                                   <script src="codemirror/addon/selection/active-line.js"></script>
+
+                                   <!--codemirror keymap-->
+                                   <script src="codemirror/keymap/sublime.js"></script>
+
+                                   <!--twitter typeahead-->
+                                   <script src="js/typeahead.bundle.min.js"></script>
+
+                                   <!--emmet-->
+                                   <script async src="js/emmet.min.js"></script>
+
+                                   <!--file saver-->
+                                   <script defer src="js/Blob.min.js"></script>
+                                   <script defer src="js/FileSaver.min.js"></script>
+
+                                   <!--font awesome-->
+                                   <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+                                   <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+                               </head>
+
+<body>
+<!--begin wrapper-->
+<div id="wrapper">
+    <section id="utils">
+        <div class="logo">
+            <a href="https://eronelit.com" target="_blank">E</a>
+        </div>
+        <div class="code-swap">
+            <span class="toggle-view">view <span class="fas fa-chevron-down"></span></span>
+            <span class="code-swap-html active" href="#">HTML</span>
+            <span class="code-swap-css" href="#">CSS</span>
+            <span class="code-swap-js" href="#">JS</span>
+            <span class="toggle-preview" href="#">preview <span class="fas fa-eye"></span></span>
+        </div><!--        <div class="font-size">
+            <label class="fa-layers fa-fw" for="fs">
+                <span class="fas fa-font"></span>
+                <span class="fas fa-percent" data-fa-transform="shrink-7 up-2 right-12"></span>
+            </label>
+            <input id="fs" type="number" min="50" max="200" value="100">
+        </div> -->
+        <div class="code-tools">
+            <span class="toggle-tools">tools <span class="fas fa-chevron-down"></span></span>
+            <span class="toggle-lineWrapping html">wrap <span class="fas fa-toggle-off"></span></span>
+            <span class="toggle-lineWrapping css">wrap <span class="fas fa-toggle-off"></span></span>
+            <span class="toggle-lineWrapping js">wrap <span class="fas fa-toggle-off"></span></span>
+            <span class="toggle-emmet">emmet <span class="fas fa-toggle-off"></span></span>
+            <span class="reset-editor">reset <span class="fas fa-undo"></span></span>
+            <span class="refresh-editor">refresh <span class="fas fa-sync"></span></span>
+            <span class="clear-editor">clear <span class="fas fa-trash"></span></span>
+            <span class="run-script">run <span class="fas fa-bolt"></span></span>
+            <span class="save">save <span class="fas fa-download"></span></span>
+        </div>
+        <div class="cdnjs-search">
+            <input class="query" type="text" placeholder="Type PACK name...">
+        </div>
+    </section>
+    <section id="editor">
+        <div class="code-pane">
+            <div class="code-pane-html">
+                <textarea id="htmlcode" name="htmlcode"></textarea>
+            </div>
+            <div class="code-pane-css">
+                <textarea id="csscode" name="csscode"></textarea>
+            </div>
+            <div class="code-pane-js">
+                <textarea id="jscode" name="jscode"></textarea>
+            </div>
+        </div>
+        <div class="preview-pane">
+            <iframe id="preview" oncontextmenu="return false;" name="preview" src=" preview.html"></iframe>
+            <span class="preview-width"></span>
+        </div>
+    </section>
+</div>
+<!--end wrapper-->
+
+<!-- main -->
+<script src="js/main.min.js"></script>
+<script src="js/main.js"></script>
+<script type="text/javascript" src="../js/main.js"></script>
+
+</body>
+</html>

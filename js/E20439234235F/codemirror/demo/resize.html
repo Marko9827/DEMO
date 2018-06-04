@@ -1,0 +1,51 @@
+<!doctype html>
+
+<title>eronelit_editorv3: Autoresize Demo</title>
+<meta charset="utf-8"/>
+<link rel=stylesheet href="../doc/docs.css">
+
+<link rel="stylesheet" href="../lib/eronelit_editorv3.css">
+<script src="../lib/eronelit_editorv3.js"></script>
+<script src="../mode/css/css.js"></script>
+<style type="text/css">
+      .eronelit_editorv3 {
+        border: 1px solid #eee;
+        height: auto;
+      }
+    </style>
+<div id=nav>
+  <a href="http://eronelit_editorv3.net"><h1>eronelit_editorv3</h1><img id=logo src="../doc/logo.png"></a>
+
+  <ul>
+    <li><a href="../index.html">Home</a>
+    <li><a href="../doc/manual.html">Manual</a>
+    <li><a href="https://github.com/eronelit_editorv3/eronelit_editorv3">Code</a>
+  </ul>
+  <ul>
+    <li><a class=active href="#">Autoresize</a>
+  </ul>
+</div>
+
+<article>
+<h2>Autoresize Demo</h2>
+<form><textarea id="code" name="code">
+.eronelit_editorv3 {
+  border: 1px solid #eee;
+  height: auto;
+}
+</textarea></form>
+
+<p>By setting an editor's <code>height</code> style
+to <code>auto</code> and giving
+the <a href="../doc/manual.html#option_viewportMargin"><code>viewportMargin</code></a>
+a value of <code>Infinity</code>, eronelit_editorv3 can be made to
+automatically resize to fit its content.</p>
+
+    <script>
+      var editor = eronelit_editorv3.fromTextArea(document.getElementById("code"), {
+        lineNumbers: true,
+        viewportMargin: Infinity
+      });
+    </script>
+
+  </article>

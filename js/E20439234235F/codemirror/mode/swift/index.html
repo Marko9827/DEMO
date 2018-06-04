@@ -1,0 +1,88 @@
+<!doctype html>
+
+<title>eronelit_editorv3: Swift mode</title>
+<meta charset="utf-8"/>
+<link rel=stylesheet href="../../doc/docs.css">
+
+<link rel="stylesheet" href="../../lib/eronelit_editorv3.css">
+<script src="../../lib/eronelit_editorv3.js"></script>
+<script src="../../addon/edit/matchbrackets.js"></script>
+<script src="./swift.js"></script>
+<style>
+	.eronelit_editorv3 { border: 2px inset #dee; }
+    </style>
+<div id=nav>
+  <a href="http://eronelit_editorv3.net"><h1>eronelit_editorv3</h1><img id=logo src="../../doc/logo.png"></a>
+
+  <ul>
+    <li><a href="../../index.html">Home</a>
+    <li><a href="../../doc/manual.html">Manual</a>
+    <li><a href="https://github.com/eronelit_editorv3/eronelit_editorv3">Code</a>
+  </ul>
+  <ul>
+    <li><a href="../index.html">Language modes</a>
+    <li><a class=active href="#">Swift</a>
+  </ul>
+</div>
+
+<article>
+<h2>Swift mode</h2>
+<form><textarea id="code" name="code">
+//
+//  TipCalculatorModel.swift
+//  TipCalculator
+//
+//  Created by Main Account on 12/18/14.
+//  Copyright (c) 2014 Razeware LLC. All rights reserved.
+//
+
+import Foundation
+
+class TipCalculatorModel {
+
+  var total: Double
+  var taxPct: Double
+  var subtotal: Double {
+    get {
+      return total / (taxPct + 1)
+    }
+  }
+
+  init(total: Double, taxPct: Double) {
+    self.total = total
+    self.taxPct = taxPct
+  }
+
+  func calcTipWithTipPct(tipPct: Double) -> Double {
+    return subtotal * tipPct
+  }
+
+  func returnPossibleTips() -> [Int: Double] {
+
+    let possibleTipsInferred = [0.15, 0.18, 0.20]
+    let possibleTipsExplicit:[Double] = [0.15, 0.18, 0.20]
+
+    var retval = [Int: Double]()
+    for possibleTip in possibleTipsInferred {
+      let intPct = Int(possibleTip*100)
+      retval[intPct] = calcTipWithTipPct(possibleTip)
+    }
+    return retval
+
+  }
+
+}
+</textarea></form>
+
+    <script>
+      var editor = eronelit_editorv3.fromTextArea(document.getElementById("code"), {
+        lineNumbers: true,
+        matchBrackets: true,
+        mode: "text/x-swift"
+      });
+    </script>
+
+    <p>A simple mode for Swift</p>
+
+    <p><strong>MIME types defined:</strong> <code>text/x-swift</code> (Swift code)</p>
+  </article>

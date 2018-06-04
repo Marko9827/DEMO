@@ -1,0 +1,12 @@
+﻿.logo a{
+    color:white;
+   font-size:30px;
+   padding:10px;
+   font-family: 'D3';
+   text-decoration:none;
+}
+
+    .logo a:hover {
+  color:   rgba(218, 165, 32, 0.70);
+      
+    }

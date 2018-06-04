@@ -1,0 +1,45 @@
+<!doctype html>
+
+<title>eronelit_editorv3: Placeholder demo</title>
+<meta charset="utf-8"/>
+<link rel=stylesheet href="../doc/docs.css">
+
+<link rel="stylesheet" href="../lib/eronelit_editorv3.css">
+<script src="../lib/eronelit_editorv3.js"></script>
+<script src="../addon/display/placeholder.js"></script>
+<style type="text/css">
+      .eronelit_editorv3 { border: 1px solid silver; }
+      .eronelit_editorv3-empty { outline: 1px solid #c22; }
+      .eronelit_editorv3-empty.eronelit_editorv3-focused { outline: none; }
+      .eronelit_editorv3 pre.eronelit_editorv3-placeholder { color: #999; }
+    </style>
+<div id=nav>
+  <a href="http://eronelit_editorv3.net"><h1>eronelit_editorv3</h1><img id=logo src="../doc/logo.png"></a>
+
+  <ul>
+    <li><a href="../index.html">Home</a>
+    <li><a href="../doc/manual.html">Manual</a>
+    <li><a href="https://github.com/eronelit_editorv3/eronelit_editorv3">Code</a>
+  </ul>
+  <ul>
+    <li><a class=active href="#">Placeholder</a>
+  </ul>
+</div>
+
+<article>
+<h2>Placeholder demo</h2>
+<form><textarea id="code" name="code" placeholder="Code goes here..."></textarea></form>
+
+    <p>The <a href="../doc/manual.html#addon_placeholder">placeholder</a>
+    plug-in adds an option <code>placeholder</code> that can be set to
+    make text appear in the editor when it is empty and not focused.
+    If the source textarea has a <code>placeholder</code> attribute,
+    it will automatically be inherited.</p>
+
+    <script>
+      var editor = eronelit_editorv3.fromTextArea(document.getElementById("code"), {
+        lineNumbers: true
+      });
+    </script>
+
+  </article>

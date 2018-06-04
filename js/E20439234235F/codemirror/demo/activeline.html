@@ -1,0 +1,88 @@
+<!doctype html>
+
+<title>eronelit_editorv3: Active Line Demo</title>
+<meta charset="utf-8"/>
+<link rel=stylesheet href="../doc/docs.css">
+
+<link rel="stylesheet" href="../lib/eronelit_editorv3.css">
+<script src="../lib/eronelit_editorv3.js"></script>
+<script src="../mode/xml/xml.js"></script>
+<script src="../addon/selection/active-line.js"></script>
+<style type="text/css">
+      .eronelit_editorv3 {border-top: 1px solid black; border-bottom: 1px solid black;}
+    </style>
+<div id=nav>
+  <a href="http://eronelit_editorv3.net"><h1>eronelit_editorv3</h1><img id=logo src="../doc/logo.png"></a>
+
+  <ul>
+    <li><a href="../index.html">Home</a>
+    <li><a href="../doc/manual.html">Manual</a>
+    <li><a href="https://github.com/eronelit_editorv3/eronelit_editorv3">Code</a>
+  </ul>
+  <ul>
+    <li><a class=active href="#">Active Line</a>
+  </ul>
+</div>
+
+<article>
+<h2>Active Line Demo</h2>
+<form><textarea id="code" name="code">
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"
+     xmlns:georss="http://www.georss.org/georss"
+     xmlns:twitter="http://api.twitter.com">
+  <channel>
+    <title>Twitter / eronelit_editorv3</title>
+    <link>http://twitter.com/eronelit_editorv3</link>
+    <atom:link type="application/rss+xml"
+               href="http://twitter.com/statuses/user_timeline/242283288.rss" rel="self"/>
+    <description>Twitter updates from eronelit_editorv3 / eronelit_editorv3.</description>
+    <language>en-us</language>
+    <ttl>40</ttl>
+  <item>
+    <title>eronelit_editorv3: http://cloud-ide.com &#8212; they're springing up like mushrooms. This one
+      uses eronelit_editorv3 as its editor.</title>
+    <description>eronelit_editorv3: http://cloud-ide.com &#8212; they're springing up like mushrooms. This
+      one uses eronelit_editorv3 as its editor.</description>
+    <pubDate>Thu, 17 Mar 2011 23:34:47 +0000</pubDate>
+    <guid>http://twitter.com/eronelit_editorv3/statuses/48527733722058752</guid>
+    <link>http://twitter.com/eronelit_editorv3/statuses/48527733722058752</link>
+    <twitter:source>web</twitter:source>
+    <twitter:place/>
+  </item>
+  <item>
+    <title>eronelit_editorv3: Posted a description of the eronelit_editorv3 2 internals at
+      http://eronelit_editorv3.net/2/internals.html</title>
+    <description>eronelit_editorv3: Posted a description of the eronelit_editorv3 2 internals at
+      http://eronelit_editorv3.net/2/internals.html</description>
+    <pubDate>Wed, 02 Mar 2011 12:15:09 +0000</pubDate>
+    <guid>http://twitter.com/eronelit_editorv3/statuses/42920879788789760</guid>
+    <link>http://twitter.com/eronelit_editorv3/statuses/42920879788789760</link>
+    <twitter:source>web</twitter:source>
+    <twitter:place/>
+  </item>
+  </channel>
+</rss></textarea></form>
+
+    <script>
+var nonEmpty = false;
+var editor = eronelit_editorv3.fromTextArea(document.getElementById("code"), {
+  mode: "application/xml",
+  styleActiveLine: true,
+  lineNumbers: true,
+  lineWrapping: true
+});
+
+function toggleSelProp() {
+  nonEmpty = !nonEmpty;
+  editor.setOption("styleActiveLine", {nonEmpty: nonEmpty});
+  var label = nonEmpty ? 'Disable nonEmpty option' : 'Enable nonEmpty option';
+  document.getElementById('toggleButton').innerText = label;
+}
+</script>
+
+    <p>Styling the current cursor line.</p>
+
+    <button onclick="toggleSelProp()" id="toggleButton">Enable <code>nonEmpty</code> option</button>
+
+  </article>

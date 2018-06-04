@@ -1,0 +1,49 @@
+<!doctype html>
+
+<title>eronelit_editorv3: Ruler Demo</title>
+<meta charset="utf-8"/>
+<link rel=stylesheet href="../doc/docs.css">
+
+<link rel="stylesheet" href="../lib/eronelit_editorv3.css">
+<script src="../lib/eronelit_editorv3.js"></script>
+<script src="../addon/display/rulers.js"></script>
+<style type="text/css">
+  .eronelit_editorv3 {border-top: 1px solid #888; border-bottom: 1px solid #888;}
+</style>
+<div id=nav>
+  <a href="http://eronelit_editorv3.net"><h1>eronelit_editorv3</h1><img id=logo src="../doc/logo.png"></a>
+
+  <ul>
+    <li><a href="../index.html">Home</a>
+    <li><a href="../doc/manual.html">Manual</a>
+    <li><a href="https://github.com/eronelit_editorv3/eronelit_editorv3">Code</a>
+  </ul>
+  <ul>
+    <li><a class=active href="#">Ruler demo</a>
+  </ul>
+</div>
+
+<article>
+<h2>Ruler Demo</h2>
+
+<script type="text/javascript">
+  var nums = "0123456789", space = "          ";
+  var colors = ["#fcc", "#f5f577", "#cfc", "#aff", "#ccf", "#fcf"];
+  var rulers = [], value = "";
+  for (var i = 1; i <= 6; i++) {
+    rulers.push({color: colors[i], column: i * 10, lineStyle: "dashed"});
+    for (var j = 1; j < i; j++) value += space;
+    value += nums + "\n";
+  }
+  var editor = eronelit_editorv3(document.body.lastChild, {
+    rulers: rulers,
+    value: value + value + value,
+    lineNumbers: true
+});
+</script>
+
+<p>Demonstration of
+the <a href="../doc/manual.html#addon_rulers">rulers</a> addon, which
+displays vertical lines at given column offsets.</p>
+
+</article>

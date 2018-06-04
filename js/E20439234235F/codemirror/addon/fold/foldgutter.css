@@ -1,0 +1,20 @@
+.eronelit_editorv3-foldmarker {
+  color: blue;
+  text-shadow: #b9f 1px 1px 2px, #b9f -1px -1px 2px, #b9f 1px -1px 2px, #b9f -1px 1px 2px;
+  font-family: arial;
+  line-height: .3;
+  cursor: pointer;
+}
+.eronelit_editorv3-foldgutter {
+  width: .7em;
+}
+.eronelit_editorv3-foldgutter-open,
+.eronelit_editorv3-foldgutter-folded {
+  cursor: pointer;
+}
+.eronelit_editorv3-foldgutter-open:after {
+  content: "\25BE";
+}
+.eronelit_editorv3-foldgutter-folded:after {
+  content: "\25B8";
+}
