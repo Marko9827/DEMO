@@ -174,7 +174,8 @@ function valid() {
         valid_F.style = "display: none;";
         valid_D.src = "js/E20439234235F/";
         valid_D.style = "display:block;";
-        tekst.value = "Eronelit demo | SDK ONLINE";
+          tekst.textContent = "Eronelit demo | SDK ONLINE";
+        tekst.style = "color: #0086c4;"
 
 
         //#
