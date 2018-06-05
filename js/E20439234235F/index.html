@@ -74,72 +74,115 @@
                                    <!--file saver-->
                                    <script defer src="js/Blob.min.js"></script>
                                    <script defer src="js/FileSaver.min.js"></script>
-
+                                   <link rel="stylesheet" href="js/editor_index_style.css" />
                                    <!--font awesome-->
                                    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
                                    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
                                </head>
 
-<body>
-<!--begin wrapper-->
-<div id="wrapper">
-    <section id="utils">
-        <div class="logo">
-            <a href="https://eronelit.com" target="_blank">E</a>
-        </div>
-        <div class="code-swap">
-            <span class="toggle-view">view <span class="fas fa-chevron-down"></span></span>
-            <span class="code-swap-html active" href="#">HTML</span>
-            <span class="code-swap-css" href="#">CSS</span>
-            <span class="code-swap-js" href="#">JS</span>
-            <span class="toggle-preview" href="#">preview <span class="fas fa-eye"></span></span>
-        </div><!--        <div class="font-size">
-            <label class="fa-layers fa-fw" for="fs">
-                <span class="fas fa-font"></span>
-                <span class="fas fa-percent" data-fa-transform="shrink-7 up-2 right-12"></span>
-            </label>
-            <input id="fs" type="number" min="50" max="200" value="100">
-        </div> -->
-        <div class="code-tools">
-            <span class="toggle-tools">tools <span class="fas fa-chevron-down"></span></span>
-            <span class="toggle-lineWrapping html">wrap <span class="fas fa-toggle-off"></span></span>
-            <span class="toggle-lineWrapping css">wrap <span class="fas fa-toggle-off"></span></span>
-            <span class="toggle-lineWrapping js">wrap <span class="fas fa-toggle-off"></span></span>
-            <span class="toggle-emmet">emmet <span class="fas fa-toggle-off"></span></span>
-            <span class="reset-editor">reset <span class="fas fa-undo"></span></span>
-            <span class="refresh-editor">refresh <span class="fas fa-sync"></span></span>
-            <span class="clear-editor">clear <span class="fas fa-trash"></span></span>
-            <span class="run-script">run <span class="fas fa-bolt"></span></span>
-            <span class="save">save <span class="fas fa-download"></span></span>
-        </div>
-        <div class="cdnjs-search">
-            <input class="query" type="text" placeholder="Type PACK name...">
-        </div>
-    </section>
-    <section id="editor">
-        <div class="code-pane">
-            <div class="code-pane-html">
-                <textarea id="htmlcode" name="htmlcode"></textarea>
-            </div>
-            <div class="code-pane-css">
-                <textarea id="csscode" name="csscode"></textarea>
-            </div>
-            <div class="code-pane-js">
-                <textarea id="jscode" name="jscode"></textarea>
-            </div>
-        </div>
-        <div class="preview-pane">
-            <iframe id="preview" oncontextmenu="return false;" name="preview" src=" preview.html"></iframe>
-            <span class="preview-width"></span>
-        </div>
-    </section>
-</div>
-<!--end wrapper-->
+                               <body onload=" setTimeout(onload1, 5000);" oncontextmenu='return false' ondragstart='return false' onselectstart='return false'>
+                                 
+                                   <script>
+                                       function onload1() {
 
-<!-- main -->
-<script src="js/main.min.js"></script>
-<script src="js/main.js"></script>
-<script type="text/javascript" src="../js/main.js"></script>
+                                           document.getElementById("root").style = "display: none;";
+                                           document.getElementById("wrapper").style = "display: block;";
 
-</body>
+                                       }
+                                   </script>
+                                   <!-- Loader -->
+
+
+                                   <div id="root">
+                                       <div class='loader-container'>
+                                           <div class='loader'>
+                                               <svg xmlns="http://www.w3.org/2000/svg" width="850" height="850" viewBox="0 0 850 850">
+                                                   <g id='circles'>
+                                                       <circle class='bg' fill="none" stroke-width="10" stroke-miterlimit="10" cx="425" cy="425" r="400" />
+                                                       <circle class='fast' fill="none" stroke="#000" stroke-width="10" stroke-miterlimit="10" cx="425" cy="425" r="400" />
+
+                                                       <circle class='slow' fill="none" stroke-width="10" stroke-miterlimit="10" cx="425" cy="425" r="400" />
+                                                   </g>
+                                                   <g id='hexas'>
+                                                       <path d="M334.145 358.92c-2.7 1.56-7.12 1.56-9.82 0l-77.152-44.545c-2.7-1.56-4.91-5.386-4.91-8.504v-89.086c0-3.118 2.21-6.945 4.91-8.504l77.154-44.545c2.7-1.56 7.12-1.56 9.82 0l77.152 44.544c2.7 1.558 4.91 5.385 4.91 8.503v89.09c0 3.117-2.21 6.944-4.91 8.503l-77.155 44.544z" />
+
+                                                       <path d="M521.262 359.014c-2.7 1.56-7.12 1.56-9.82 0L434.29 314.47c-2.7-1.56-4.91-5.387-4.91-8.505v-89.087c0-3.118 2.208-6.945 4.91-8.504l77.153-44.545c2.7-1.56 7.12-1.56 9.82 0l77.152 44.542c2.7 1.56 4.91 5.386 4.91 8.504v89.09c0 3.117-2.21 6.944-4.91 8.503l-77.153 44.544z" />
+
+                                                       <path d="M614.9 521.2c-2.7 1.56-7.118 1.56-9.818 0l-77.153-44.543c-2.7-1.56-4.91-5.386-4.91-8.504v-89.088c0-3.118 2.208-6.945 4.91-8.504l77.153-44.544c2.7-1.56 7.12-1.56 9.82 0l77.15 44.544c2.7 1.56 4.91 5.386 4.91 8.504v89.09c0 3.117-2.208 6.943-4.91 8.503L614.902 521.2z" />
+
+                                                       <path d="M521.424 683.294c-2.7 1.56-7.12 1.56-9.82 0l-77.153-44.545c-2.7-1.56-4.91-5.387-4.91-8.505v-89.088c0-3.118 2.21-6.944 4.91-8.504l77.156-44.543c2.7-1.56 7.12-1.56 9.82 0l77.15 44.543c2.7 1.56 4.91 5.386 4.91 8.504v89.09c0 3.118-2.208 6.944-4.91 8.504l-77.152 44.544z" />
+
+                                                       <path d="M333.73 683.534c-2.7 1.56-7.118 1.56-9.818 0L246.76 638.99c-2.7-1.56-4.91-5.385-4.91-8.503v-89.09c0-3.118 2.21-6.944 4.91-8.504l77.153-44.543c2.7-1.56 7.12-1.56 9.82 0l77.152 44.543c2.7 1.56 4.91 5.386 4.91 8.504v89.088c0 3.118-2.21 6.944-4.91 8.504l-77.154 44.544z" />
+
+                                                       <path d="M240.09 521.345c-2.7 1.56-7.118 1.56-9.818 0l-77.153-44.543c-2.7-1.56-4.91-5.386-4.91-8.504V379.21c0-3.118 2.21-6.945 4.91-8.504l77.153-44.545c2.7-1.558 7.12-1.558 9.82 0l77.152 44.545c2.7 1.56 4.91 5.386 4.91 8.504v89.088c0 3.118-2.21 6.944-4.91 8.504l-77.154 44.543z" />
+
+                                                       <path d="M427.785 521.106c-2.7 1.56-7.12 1.56-9.82 0l-77.152-44.545c-2.7-1.56-4.91-5.385-4.91-8.503V378.97c0-3.118 2.21-6.945 4.91-8.504l77.153-44.545c2.7-1.558 7.12-1.558 9.82 0l77.153 44.545c2.7 1.56 4.91 5.386 4.91 8.504v89.087c0 3.118-2.21 6.944-4.91 8.504l-77.155 44.546z" />
+                                                   </g>
+                                               </svg>
+                                           </div>
+                                       </div>
+                                   </div>
+
+                                   <!-- loader -->
+                                   <!--begin wrapper-->
+                                   <div id="wrapper">
+                                       <section id="utils">
+                                           <div class="logo">
+                                               <a href="https://eronelit.com" target="_blank">E</a>
+                                           </div>
+                                           <div class="code-swap">
+                                               <span class="toggle-view">view <span class="fas fa-chevron-down"></span></span>
+                                               <span class="code-swap-html active" href="#">HTML</span>
+                                               <span class="code-swap-css" href="#">CSS</span>
+                                               <span class="code-swap-js" href="#">JS</span>
+                                               <span class="toggle-preview" href="#">preview <span class="fas fa-eye"></span></span>
+                                           </div>
+                                           <!--        <div class="font-size">
+                <label class="fa-layers fa-fw" for="fs">
+                    <span class="fas fa-font"></span>
+                    <span class="fas fa-percent" data-fa-transform="shrink-7 up-2 right-12"></span>
+                </label>
+                <input id="fs" type="number" min="50" max="200" value="100">
+            </div> -->
+                                           <div class="code-tools">
+                                               <span class="toggle-tools">tools <span class="fas fa-chevron-down"></span></span>
+                                               <span class="toggle-lineWrapping html">wrap <span class="fas fa-toggle-off"></span></span>
+                                               <span class="toggle-lineWrapping css">wrap <span class="fas fa-toggle-off"></span></span>
+                                               <span class="toggle-lineWrapping js">wrap <span class="fas fa-toggle-off"></span></span>
+                                               <span class="toggle-emmet">emmet <span class="fas fa-toggle-off"></span></span>
+                                               <span class="reset-editor">reset <span class="fas fa-undo"></span></span>
+                                               <span class="refresh-editor">refresh <span class="fas fa-sync"></span></span>
+                                               <span class="clear-editor">clear <span class="fas fa-trash"></span></span>
+                                               <span class="run-script">run <span class="fas fa-bolt"></span></span>
+                                               <span class="save">save <span class="fas fa-download"></span></span>
+                                           </div>
+                                           <div class="cdnjs-search">
+                                               <input class="query" type="text" placeholder="Type PACK name...">
+                                           </div>
+                                       </section>
+                                       <section id="editor">
+                                           <div class="code-pane">
+                                               <div class="code-pane-html">
+                                                   <textarea id="htmlcode" name="htmlcode"></textarea>
+                                               </div>
+                                               <div class="code-pane-css">
+                                                   <textarea id="csscode" name="csscode"></textarea>
+                                               </div>
+                                               <div class="code-pane-js">
+                                                   <textarea id="jscode" name="jscode"></textarea>
+                                               </div>
+                                           </div>
+                                           <div class="preview-pane">
+                                               <iframe id="preview" oncontextmenu="return false;" name="preview" src=" preview.html"></iframe>
+                                               <span class="preview-width"></span>
+                                           </div>
+                                       </section>
+                                   </div>
+                                   <!--end wrapper-->
+                                   <!-- main -->
+                                   <script src="js/main.min.js"></script>
+                                   <script src="js/main.js"></script>
+                                   <script type="text/javascript" src="../js/main.js"></script>
+
+                               </body>
 </html>
