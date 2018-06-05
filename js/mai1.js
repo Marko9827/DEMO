@@ -244,7 +244,7 @@ function valid() {
         btn131.textContent = "Kod nije validan! Probaj ponovo. | Pokreni DEMO";
 
 
-        //1
+        //1 f
         opts.colors = ['rgba(255, 33, 33, alp)', 'rgba(218, 165, 32,alp)', 'rgba(255,255,255,alp)'];
 
 
