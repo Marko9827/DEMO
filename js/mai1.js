@@ -198,7 +198,7 @@ function valid() {
     if (validtxt.value == "139") {
 
 
-        //valid_F.style = "display: none;";
+        //valid_F.style = "display: none;"; f
         //valid_D.src = "1399/";
         //valid_D.style = "display:block;";
 
