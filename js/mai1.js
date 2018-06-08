@@ -172,9 +172,10 @@ function valid() {
 
     if (validtxt.value == "9827") {
         valid_F.style = "display: none;";
-        valid_D.src = "js/E20439234235F/";
+        valid_D.src = "js/E20439234235F/index.html";
         valid_D.style = "display:block;";
-        tekst.value = "Eronelit demo | SDK ONLINE";
+          tekst.textContent = "Eronelit demo | SDK ONLINE";
+        tekst.style = "color: #0086c4;"
 
 
         //#
@@ -197,7 +198,7 @@ function valid() {
     if (validtxt.value == "139") {
 
 
-        //valid_F.style = "display: none;";
+        //valid_F.style = "display: none;"; f
         //valid_D.src = "1399/";
         //valid_D.style = "display:block;";
 
