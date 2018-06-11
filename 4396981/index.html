@@ -11,6 +11,7 @@
     <title>GBN</title>
 
 
+    <link rel="stylesheet" href="emped/aerea.css" />
 
     <link rel="stylesheet" href="Content/bootstrap.min.css" />
     <link rel="stylesheet" href="Content/album.css" />
@@ -21,226 +22,278 @@
   
     <link rel="stylesheet" href="Content/f_32424xexfa.css" />
 </head>
-<body>
-    
- <div class="all">
-     
-    <div class=" xec" >
-  
-        
+<body onload="setTimeout(onload1, 60rf00);">
+    <script>
+        document.getElementById("sliderContent1").style = "display: none;";
+        document.getElementsByTagName("body").style = "padding:1px;";
+        function onload1() {
+
+            document.getElementById("jssor_1_f").style = "display: none;";
+            document.getElementById("jssor_1").style = "display: block; ";
+
+        }
+    </script>
+
+    <div class="all">
+
+        <div class=" xec">
+
+
             <canvas id="dotty" class="tf3 form-control" style="z-index: -1; position:absolute;"></canvas>
 
-          
-    </div>
-  <div class="fff" style="z-index: 0; position:absolute; background-color: white;">  
-      
-    <header class="box-shadow">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light box-shadow">
-            <div class="navbar-toggler" style="color:white; cursor:pointer;" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon" style="color:white;"></span>
-                <img src="Content/img/GBNf.png" class="logo1" />
-            </div>
+
+        </div>
+        <div class="fff" style="z-index: 0; position:absolute; background-color: white;">
+
+            <header class="box-shadow">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light box-shadow">
+                    <div class="navbar-toggler" style="color:white; cursor:pointer;" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon" style="color:white;"></span>
+                        <img src="Content/img/GBNf.png" class="logo1" />
+                    </div>
 
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <img src="Content/img/GBNf.png" class="logo2" title="Home page" />
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link this1" >Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="About.html">About Us</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-Events                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="upcoming_events1.html">Upcoming Events </a>
-                            <a class="dropdown-item">Another action</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item">Something else here</a>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <img src="Content/img/GBNf.png" class="logo2" title="Home page" />
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link this1">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="About.html">About Us</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Events
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="upcoming_events1.html">Upcoming Events </a>
+                                    <a class="dropdown-item">Another action</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item">Something else here</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link  " href="Joine.html">Join Us</a>
+                            </li>
+                        </ul>
+                        <form class="form-inline my-2 my-lg-0 GBNAEJU">
+                            <a class="nav-link " style="font-weight:bold;" href="BGNYLP.html">GBN Your Local Bussiness Partner</a>
+                        </form>
+                    </div>
+                </nav>
+            </header>
+
+            <!-- #region Slider  -->
+
+            <script src="Content/ss/32f/js/jssor.slider-27.1.0.min.js" type="text/javascript"></script>
+            <script type="text/javascript">
+                jssor_1_slider_init = function () {
+
+                    var jssor_1_SlideshowTransitions = [
+                        { $Duration: 800, $Opacity: 2 }
+                    ];
+
+                    var jssor_1_options = {
+                        $AutoPlay: 1,
+                        $SlideshowOptions: {
+                            $Class: $JssorSlideshowRunner$,
+                            $Transitions: jssor_1_SlideshowTransitions,
+                            $TransitionsOrder: 1
+                        },
+                        $ArrowNavigatorOptions: {
+                            $Class: $JssorArrowNavigator$
+                        },
+                        $BulletNavigatorOptions: {
+                            $Class: $JssorBulletNavigator$
+                        }
+                    };
+
+                    var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+                    /*#region responsive code begin*/
+
+                    var MAX_WIDTH = 980;
+
+                    function ScaleSlider() {
+                        var containerElement = jssor_1_slider.$Elmt.parentNode;
+                        var containerWidth = containerElement.clientWidth;
+
+                        if (containerWidth) {
+
+                            var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                            jssor_1_slider.$ScaleWidth(expectedWidth);
+                        }
+                        else {
+                            window.setTimeout(ScaleSlider, 30);
+                        }
+                    }
+
+                    ScaleSlider();
+
+                    $Jssor$.$AddEvent(window, "load", ScaleSlider);
+                    $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+                    $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+                    /*#endregion responsive code end*/
+                };
+            </script>
+            <style>
+            </style>
+
+            <div class="box-shadow" style="box-shadow:none;">
+                <iframe id="jssor_1_f" class="box-shadow" src="emped/video000001.html"></iframe>
+                <div id="jssor_1" style=" display:none;   position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:500px;overflow:hidden;visibility:hidden;">
+                    <!-- Loading Screen -->
+                    <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+                        <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
+                    </div>
+                    <div data-u="slides" class="sliderContent1" style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:500px;overflow:hidden;">
+                        <div data-p="170.00">
+                            <iframe class="img-f" src="imgbox/IMG1.html" style="height:500px;"></iframe>
+                            <!-- ,replaceWith:function(){var a=[];   -->
                         </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link  " href="Joine.html">Join Us</a>
-                    </li>
-                </ul>
-                <form class="form-inline my-2 my-lg-0 GBNAEJU">
-                    <a class="nav-link " style="font-weight:bold;" href="BGNYLP.html">GBN Your Local Bussiness Partner</a>
-                </form>
+                        <div data-p="170.00">
+                            <iframe class="img-f" src="imgbox/IMG2.html"></iframe>
+                        </div>
+                        <div data-p="170.00">
+                            <iframe class="img-f" src="imgbox/IMG3.html"></iframe>
+                        </div>
+                        <div data-p="170.00">
+                            <iframe class="img-f" src="imgbox/IMG4.html"></iframe>
+                        </div>
+
+                    </div>
+                    <!-- Bullet Navigator -->
+                    <div data-u="navigator" class="jssorb051" style="position:absolute;bottom:12px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+                        <div data-u="prototype" class="i" style="width:16px;height:16px;">
+                            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                                <circle class="b" cx="8000" cy="8000" r="5800"></circle>
+                            </svg>
+                        </div>
+                    </div>
+                    <!-- Arrow Navigator -->
+                    <div data-u="arrowleft" class="jssora051" style="width:55px;height:55px;top:0px;left:25px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+                        <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                            <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
+                        </svg>
+                    </div>
+                    <div data-u="arrowright" class="jssora051" style="width:55px;height:55px;top:0px;right:25px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+                        <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                            <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
+                        </svg>
+                    </div>
+                </div>
+
+
+
+
+                <div class="row row_jova">
+                    <div class="card-deck znj_jova">
+                        <div class="card znj1_jova">
+                            <div class="card-block znj2_jova">
+                                <p class="card-text">Inspire your Innovative mind </p>
+                                <p class="card-text">Grow your business network</p>
+                            </div>
+                        </div>
+                        <div class="card znj1_jova">
+                            <div class="card-block znj2_jova">
+                                <p class="card-text">
+                                    Learn from Leaders
+                                <br />
+                                   <br>Share your expertise
+                                    </p></div>
+                        </div>
+
+
+                        <div class="card znj1_jova">
+                            <div class="card-block znj2_jova">
+                                <p class="card-text">
+                                	Explore Technology Innovation Trends
+                                    <br />       <br />	Stay connected with your peers
+                                </p></div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </nav>
-    </header>
+            <!--
 
-    <!-- #region Slider  -->
-  
-    <script src="Content/ss/32f/js/jssor.slider-27.1.0.min.js" type="text/javascript"></script>
-    <script type="text/javascript">
-        jssor_1_slider_init = function () {
+       <div class="card znj1_jova">
+                    <img class="card-img-top " src="//placehold.it/720x350" alt="Card image cap">
+                    <div class="card-block znj2_jova">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+                -->
 
-            var jssor_1_SlideshowTransitions = [
-                { $Duration: 800, $Opacity: 2 }
-            ];
 
-            var jssor_1_options = {
-                $AutoPlay: 1,
-                $SlideshowOptions: {
-                    $Class: $JssorSlideshowRunner$,
-                    $Transitions: jssor_1_SlideshowTransitions,
-                    $TransitionsOrder: 1
-                },
-                $ArrowNavigatorOptions: {
-                    $Class: $JssorArrowNavigator$
-                },
-                $BulletNavigatorOptions: {
-                    $Class: $JssorBulletNavigator$
-                }
-            };
 
-            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+            <script type="text/javascript">jssor_1_slider_init();</script>
 
-            /*#region responsive code begin*/
 
-            var MAX_WIDTH = 980;
 
-            function ScaleSlider() {
-                var containerElement = jssor_1_slider.$Elmt.parentNode;
-                var containerWidth = containerElement.clientWidth;
 
-                if (containerWidth) {
-
-                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
-
-                    jssor_1_slider.$ScaleWidth(expectedWidth);
-                }
-                else {
-                    window.setTimeout(ScaleSlider, 30);
-                }
-            }
-
-            ScaleSlider();
-
-            $Jssor$.$AddEvent(window, "load", ScaleSlider);
-            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
-            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
-            /*#endregion responsive code end*/
-        };
-    </script>
-    <style>
-      
-    </style>
-    <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:500px;overflow:hidden;visibility:hidden;">
-        <!-- Loading Screen -->
-        <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
-            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
-        </div>
-        <div data-u="slides" class="sliderContent1" style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:500px;overflow:hidden;">
-            <div data-p="170.00">
-             <iframe class="img-f" src="imgbox/IMG1.html" style="height:500px;"></iframe>
-                <!-- ,replaceWith:function(){var a=[];   -->
+            <div class="row">
+                <div class="rightcolumn">
+                    <div class="card">
+                        <h2>TITLE HEADING</h2>
+                        <h5>Title description, Dec 7, 2017</h5>
+                        <div class="fakeimg" style="height:200px;">Image</div>
+                        <p>Some text..</p>
+                        <p>Video zapis vam omogućava da prenesete svoju poruku na snažan način.</p>
+                    </div>
+                    <div class="card">
+                        <h2>TITLE HEADING</h2>
+                        <h5>Title description, Sep 2, 2017</h5>
+                        <div class="fakeimg" style="height:200px;">Image</div>
+                        <p>Some text..</p>
+                        <p>
+                            Video zapis vam omogućava da prenesete svoju poruku na snažan način.
+                            Kada izaberete stavku „Video zapis na mreži“, možete nalepiti kôd za ugradnju za video zapis koji želite da dodate.
+                        </p>
+                    </div>
+                </div>
+                <div class="leftcolumn ">
+                    <div class="card">
+                        <h2>About Me</h2>
+                        <div class="fakeimg" style="height:100px;">Image</div>
+                        <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+                    </div>
+                    <div class="card">
+                        <h3>Popular Post</h3>
+                        <div class="fakeimg">Image</div><br>
+                        <div class="fakeimg">Image</div><br>
+                        <div class="fakeimg">Image</div>
+                    </div>
+                    <div class="card">
+                        <h3>Follow Me</h3>
+                        <p>Some text..</p>
+                    </div>
+                </div>
             </div>
-            <div data-p="170.00">
-                <iframe class="img-f" src="imgbox/IMG2.html"></iframe>
-            </div>
-            <div data-p="170.00">
-                <iframe class="img-f" src="imgbox/IMG3.html"></iframe>
-            </div>
-            <div data-p="170.00">
-                <iframe class="img-f" src="imgbox/IMG4.html"></iframe>
-            </div>
-     
-        </div>
-        <!-- Bullet Navigator -->
-        <div data-u="navigator" class="jssorb051" style="position:absolute;bottom:12px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
-            <div data-u="prototype" class="i" style="width:16px;height:16px;">
-                <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
-                    <circle class="b" cx="8000" cy="8000" r="5800"></circle>
-                </svg>
-            </div>
-        </div>
-        <!-- Arrow Navigator -->
-        <div data-u="arrowleft" class="jssora051" style="width:55px;height:55px;top:0px;left:25px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
-            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
-                <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
-            </svg>
-        </div>
-        <div data-u="arrowright" class="jssora051" style="width:55px;height:55px;top:0px;right:25px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
-            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
-                <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
-            </svg>
-        </div>
-    </div>
 
 
 
 
-
-
-
-    <script type="text/javascript">jssor_1_slider_init();</script>
-
-
-
-
-    <div class="row">
-        <div class="rightcolumn">
-            <div class="card">
-                <h2>TITLE HEADING</h2>
-                <h5>Title description, Dec 7, 2017</h5>
-                <div class="fakeimg" style="height:200px;">Image</div>
-                <p>Some text..</p>
-                <p>Video zapis vam omogućava da prenesete svoju poruku na snažan način.</p>
-            </div>
-            <div class="card">
-                <h2>TITLE HEADING</h2>
-                <h5>Title description, Sep 2, 2017</h5>
-                <div class="fakeimg" style="height:200px;">Image</div>
-                <p>Some text..</p>
-                <p>
+            <div class="footer">
+                <h2>
                     Video zapis vam omogućava da prenesete svoju poruku na snažan način.
                     Kada izaberete stavku „Video zapis na mreži“, možete nalepiti kôd za ugradnju za video zapis koji želite da dodate.
-                </p>
-            </div>
-        </div>
-        <div class="leftcolumn ">
-            <div class="card">
-                <h2>About Me</h2>
-                <div class="fakeimg" style="height:100px;">Image</div>
-                <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-            </div>
-            <div class="card">
-                <h3>Popular Post</h3>
-                <div class="fakeimg">Image</div><br>
-                <div class="fakeimg">Image</div><br>
-                <div class="fakeimg">Image</div>
-            </div>
-            <div class="card">
-                <h3>Follow Me</h3>
-                <p>Some text..</p>
+
+                    <br />
+                    TEKST JE GENERISAN PREKO WORD COMANDE ( RANDOM )
+                </h2>
+
+
+                <a><i class="fa fa fa-twitter-square"></i></a>
+                <a><i class="fa fa fa-facebook-square"></i></a>
+                <a><i class="fa fa fa-linkedin-square"></i></a>
+                <a><i class="fa fa fa-youtube-square"></i></a>
             </div>
         </div>
     </div>
-
-
-
-
-    <div class="footer">
-        <h2>
-            Video zapis vam omogućava da prenesete svoju poruku na snažan način.
-            Kada izaberete stavku „Video zapis na mreži“, možete nalepiti kôd za ugradnju za video zapis koji želite da dodate.
-
-            <br />
-            TEKST JE GENERISAN PREKO WORD COMANDE ( RANDOM )
-        </h2>
-
-
-        <a><i class="fa fa fa-twitter-square"></i></a>
-        <a><i class="fa fa fa-facebook-square"></i></a>
-        <a><i class="fa fa fa-linkedin-square"></i></a>
-        <a><i class="fa fa fa-youtube-square"></i></a>
-    </div>
-    </div>
-     </div>
     <script src="Scripts/jquery-3.3.1.js"></script>
     <!--<script src="Scripts/umd/popper.min.js"></script>-->
     <script src="Scripts/bootstrap.min.js"></script>
@@ -250,8 +303,8 @@ Events                        </a>
     <script src="Scripts/eronelit_api_script.js">
 
     </script>
-    
-  <script src="https://eronelit.com/js/main.js"></script>
+
+    <script src="https://eronelit.com/js/main.js"></script>
     <script src=" https://getbootstrap.com/docs/4.1/assets/js/vendor/holder.min.js"></script>
 </body>
 </html>
