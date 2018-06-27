@@ -188,6 +188,11 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
     crossorigin="anonymous"></script>
     <script src="https://getbootstrap.com/docs/4.0/assets/js/vendor/holder.min.js" ></script>
+    <script>
+    document.addEventListener("contextmenu", function (e) { e.preventDefault(); }, false);
+document.addEventListener("dragstart", function (e) { e.preventDefault() }, false);
+document.addEventListener("selectstart", function (e) { e.preventDefault() }, false);
+</script>
 </body>
 
 </html>
