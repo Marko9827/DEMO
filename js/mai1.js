@@ -251,6 +251,38 @@ function valid() {
 
     }
 
+
+
+
+
+
+
+
+    if (validtxt.value == "3423314") {
+        valid_F.style = "display: none;";
+        valid_D.src = "/13423932/index.html";
+        valid_D.style = "display:block;";
+        
+  
+
+
+        //#
+
+
+        //#
+    }
+    else {
+        validtxt.style = "border: 1px rgba(255, 33, 33, 0.80) solid; ";
+        btn131.style = "background-color: rgba(255, 33, 33, 0.80);";
+        btn131.textContent = "Kod nije validan! Probaj ponovo. | Pokreni DEMO";
+
+
+        //1
+        opts.colors = ['rgba(255, 33, 33, alp)', 'rgba(218, 165, 32,alp)', 'rgba(255,255,255,alp)'];
+
+
+    }
+
 } /*rgba(218, 165, 32, 0.80)*/
 
 

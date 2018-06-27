@@ -1,0 +1,29 @@
+/**//*AEREAREAREA*/
+
+.carousel-item{
+    height: 250px;
+  }
+  
+  .carousel-item h1{
+    font-size: 20px;
+  }
+  .carousel-item p{
+    font-size: 15px;
+  }
+
+
+
+.main{
+  margin-top: -50px;
+  margin-bottom: -50px;
+}
+
+  #myCarousel {
+    margin-top: 0px;
+    margin-bottom:0px;
+     
+   }
+   
+   *{
+       overflow: hidden;
+   }

@@ -1,0 +1,116 @@
+* {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.top_nav{
+  width: 100%;
+  background:#6d7075;
+  color:white;
+  text-align: center;
+  padding: 5px;
+}
+
+.style1 ul li a{
+  background: #6d7075;
+  color: white;  
+}
+
+.top_nav .mainte{
+   background:#6d7075;
+  color:white;
+  
+  margin: -10px;
+}
+
+.top_nav .mainte h2{
+  padding: 10px;
+}
+
+.dropdown-menu{
+  border-radius: 0px;
+ 
+  padding: 0px;
+}
+
+
+.top_nav .top_nav1{
+  width: 100%;
+  background: white;
+  margin: -1x;
+}
+
+.top_nav .top_nav1 img{
+  margin-bottom: 40px;
+  margin-top: 40px;
+  height: 120px;
+  width: 120px;
+
+}
+.bodyy .top_nav{
+  background: white;
+}
+.style1 {
+    background: #6d7075; 
+     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 20px 0 rgba(0, 0, 0, 0.10); 
+
+}
+.dropdown .dropdown-menu{
+  color: white;
+}
+
+.dropdown .dropdown-menu a:hover{
+  color: black;
+}
+
+
+
+
+    #Eronelit_plugin_24242news
+          {
+            background:#90949b;
+            width: 100%;
+            height: 30px; 
+          
+            margin-left: -10;
+            margin-bottom: 10px;
+            margin-top:-22px;
+     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 20px 0 rgba(0, 0, 0, 0.10); 
+
+          }
+
+
+          #Eronelit_plugin_24242news	#buttomHome
+
+{
+                            
+background:#6d7075;
+margin-left:40px;
+margin-right:10px;
+color:white;
+height:100%;
+border-top-right-radius:60px;
+border-bottom-right-radius:60px;
+  padding-right:15px;
+  border:0px;
+                            
+}
+        
+.Slider_Static_Plugin{
+ width: 100%;
+  border: 0px;
+}
+
+
+
+
+#Eronelit_plugin_24242news #Pta {
+                            color:white;
+                            padding-top: 3px;
+                            padding-left: 10px;
+                          text-align: left;
+                          }
+
+.FAE {
+  margin:20px;
+}
