@@ -1,4 +1,4 @@
-//9827
+//9827F
 
 
 var color1;
@@ -236,7 +236,7 @@ function valid() {
         validtxt.style = "border: 1px rgba(123, 0, 255, 0.80) solid; ";
         btn131.style = "background-color: rgba(123, 0, 255, 0.80);";
         return false;
-/*
+*/
 
         //#
      
