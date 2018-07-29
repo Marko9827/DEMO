@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <div class="FF">
+        <div>AFEAFEAF</div>
+    </div>
+
+<script>
+// Pretty simple :)
+var success = function(){
+    // Do something on success
+};
+
+var error = function(msg){
+    // Do something on error
+};
+
+OurCodeWorldpreventscreenshots.disable(success,error);
+
+// Or
+
+OurCodeWorldpreventscreenshots.disable(function(s){
+    alert("OŠ MORGEN! :P :)");
+},function(e){
+    // Oops ...
+    console.error(e);
+});
+
+</script>
+
+</body>
+</html>
