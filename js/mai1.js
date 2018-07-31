@@ -1,7 +1,4 @@
-﻿
-
-
-
+//9827F
 
 
 var color1;
@@ -226,12 +223,12 @@ function valid() {
 
 
     if (validtxt.value == "439698") {
-
-        /*
-        valid_F.style = "display: none;";
+  valid_F.style = "display: none;";
         valid_D.src = "4396981/";
           valid_D.style = "display:block;";
-        */
+        /*
+      
+        
 
 
         opts.colors = ['rgba(123, 0, 255, alp)', 'rgba(218, 165, 32,alp)', 'rgba(255,255,255,alp)'];
@@ -239,7 +236,7 @@ function valid() {
         validtxt.style = "border: 1px rgba(123, 0, 255, 0.80) solid; ";
         btn131.style = "background-color: rgba(123, 0, 255, 0.80);";
         return false;
-
+*/
 
         //#
      
