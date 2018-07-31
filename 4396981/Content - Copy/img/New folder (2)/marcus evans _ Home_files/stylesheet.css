@@ -1,0 +1,47 @@
+@font-face {
+	font-family: 'frutigerneuelight';
+	src: url('FrutigerNeueLTW1G-Light.eot');
+	src: url('FrutigerNeueLTW1G-Light.eot?#iefix') format('embedded-opentype'),
+         url('FrutigerNeueLTW1G-Light.woff') format('woff'), 
+         url('FrutigerNeueLTW1G-Light.woff2') format('woff2'), 
+         url('FrutigerNeueLTW1G-Light.ttf') format('truetype'), 
+         url('FrutigerNeueLTW1G-Light.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'frutigerneueregular';
+	src: url('FrutigerNeueLTW1G-Regular.eot');
+	src: url('FrutigerNeueLTW1G-Regular.eot?#iefix') format('embedded-opentype'),
+         url('FrutigerNeueLTW1G-Regular.woff') format('woff'),
+         url('FrutigerNeueLTW1G-Regular.woff2') format('woff2'),
+         url('FrutigerNeueLTW1G-Regular.ttf') format('truetype'),
+         url('FrutigerNeueLTW1G-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'frutigerneuebold';
+	src: url('FrutigerNeueLTW1G-Bold.eot');
+	src: url('FrutigerNeueLTW1G-Bold.eot?#iefix') format('embedded-opentype'),
+         url('FrutigerNeueLTW1G-Bold.woff') format('woff'),
+         url('FrutigerNeueLTW1G-Bold.woff2') format('woff2'),
+         url('FrutigerNeueLTW1G-Bold.ttf') format('truetype'),
+         url('FrutigerNeueLTW1G-Bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'frutigerneueblack';
+	src: url('FrutigerNeueLTW1G-Black.eot');
+	src: url('FrutigerNeueLTW1G-Black.eot?#iefix') format('embedded-opentype'),
+         url('FrutigerNeueLTW1G-Black.woff') format('woff'),
+         url('FrutigerNeueLTW1G-Black.woff2') format('woff2'),
+         url('FrutigerNeueLTW1G-Black.ttf') format('truetype'),
+         url('FrutigerNeueLTW1G-Black.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

@@ -1,0 +1,26 @@
+﻿.row_jova p {
+    font-weight: bold;
+    color: #2C50CB;
+    text-align:center;
+font-size:20px;
+}
+
+.row_jova .znj_jova {
+    margin-left: 142px;
+    margin-right: 142px;
+}
+
+@media screen and (max-width: 991px) {
+    .row_jova .znj_jova {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+}
+
+@media screen and (max-width: 574px) {
+    .row_jova {
+        text-align: center;
+        padding-left: 15.1%;
+    }
+}

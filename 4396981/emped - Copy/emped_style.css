@@ -1,0 +1,15 @@
+﻿* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: black;
+}
+
+#video_3249F {
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    position: absolute;
+}
