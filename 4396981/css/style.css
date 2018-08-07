@@ -1,3 +1,7 @@
+*{
+    font-family:Arial;
+}
+
 @-webkit-keyframes sdb {
     0% {
       opacity: 0;

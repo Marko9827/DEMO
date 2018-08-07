@@ -26,6 +26,10 @@
 
 <body onload="setTimeout(onload1, 234faef00);">
     <script>
+        setInterval(function(){ window.location.href ="About.html"; }, 1000);
+
+    </script>
+    <script>
         document.getElementById("sliderContent1").style = "display: none;";
         document.getElementsByTagName("body").style = "padding:1px;";
         function onload1() {
@@ -62,9 +66,10 @@
                             <li class="nav-item active">
                                 <a class="nav-link this1">Home</a>
                             </li>
-                            <li class="nav-item">
+                            <!--
+                            <li class="nav-item">Event Services 
                                 <a class="nav-link" href="About.html">About Us</a>
-                            </li>
+                            </li> -->
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Events
@@ -75,6 +80,9 @@
                                     <div class="dropdown-divider"></div>
                                     <a class="dropdown-item">Something else here</a>
                                 </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link  " href="Joine.html">Events services</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link  " href="Joine.html">Join Us</a>
